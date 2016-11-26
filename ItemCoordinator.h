@@ -6,8 +6,7 @@
 #import "BaseCoordinator.h"
 
 @interface ItemCoordinator : BaseCoordinator
-
-
+- (instancetype)initWithCoordinatorFactory:(id <CoordinatorFactory>)coordinatorFactory router:(id <Router>)router;
 
 
 @end
