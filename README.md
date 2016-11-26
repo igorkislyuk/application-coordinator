@@ -1,4 +1,4 @@
-# ${1:ApplicationCoordinator}
+# ${1:Project Name}
 
 This is learn project for applying coordinators approach in your iOS Apps. Help get rid of MVC (Massive)
 
