@@ -6,5 +6,11 @@
 #import <Foundation/Foundation.h>
 #import "BaseCoordinator.h"
 
+@protocol CoordinatorFactory;
+@protocol TabbarFlowOutput;
+
 @interface ApplicationCoordinator : BaseCoordinator
+
+- (instancetype)initWithTabbar:(id <TabbarFlowOutput>)tabbar coordinatorFactory:(id <CoordinatorFactory>)coordinatorFactory;
+
 @end

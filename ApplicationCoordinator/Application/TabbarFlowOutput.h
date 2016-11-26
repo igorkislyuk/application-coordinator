@@ -9,6 +9,6 @@ typedef void(^NavigationBlock)(UINavigationController *navigationController);
 
 @property(nonatomic, copy) NavigationBlock itemFlowDidSelect;
 @property(nonatomic, copy) NavigationBlock settingsFlowDidSelect;
-@property(nonatomic, copy) NavigationBlock viewDidLoad;
+@property(nonatomic, copy) NavigationBlock onViewDidLoad;
 
 @end

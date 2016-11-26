@@ -1,5 +1,5 @@
 //
-//  Tabbar.h
+//  TabbarViewController.h
 //  ApplicationCoordinator
 //
 //  Created by Igor on 26/11/16.
@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "TabbarFlowOutput.h"
 
-@interface Tabbar : UITabBarController <TabbarFlowOutput>
+@interface TabbarViewController : UITabBarController <TabbarFlowOutput>
 
 @property(nonatomic, copy) NavigationBlock itemFlowDidSelect;
 @property(nonatomic, copy) NavigationBlock settingsFlowDidSelect;
-@property(nonatomic, copy) NavigationBlock viewDidLoad;
+@property(nonatomic, copy) NavigationBlock onViewDidLoad;
 
 @end

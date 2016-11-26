@@ -7,31 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3927B102E3E6C351BFDFCD77 /* ItemCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B4DA62939636BF3E42BD /* ItemCoordinator.m */; };
+		3927B810099BB7E3D657D1FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B5E9588F0294601FEF96 /* AppDelegate.m */; };
 		3927BD67FE050B99682BA9E8 /* ApplicationCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B6FB4BCBB4801906ADA2 /* ApplicationCoordinator.m */; };
+		3927BE428AE32ADC3C4D03C0 /* CoordinatorFactoryImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B4296B2B5B397D3E78AB /* CoordinatorFactoryImp.m */; };
 		ED20E9DE1DE9CB7E004911B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20E9DD1DE9CB7E004911B2 /* main.m */; };
-		ED20E9E11DE9CB7E004911B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20E9E01DE9CB7E004911B2 /* AppDelegate.m */; };
 		ED20E9E91DE9CB7E004911B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED20E9E81DE9CB7E004911B2 /* Assets.xcassets */; };
 		ED20E9EC1DE9CB7E004911B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED20E9EA1DE9CB7E004911B2 /* LaunchScreen.storyboard */; };
 		ED20E9F91DE9D01F004911B2 /* BaseCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20E9F81DE9D01F004911B2 /* BaseCoordinator.m */; };
-		ED20EA021DE9E035004911B2 /* Tabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20EA011DE9E035004911B2 /* Tabbar.m */; };
+		ED20EA021DE9E035004911B2 /* TabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20EA011DE9E035004911B2 /* TabbarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3927B1693B49D5C962C115C7 /* TabbarFlowOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarFlowOutput.h; sourceTree = "<group>"; };
 		3927B1D89B5B1CCEB8234151 /* ApplicationCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationCoordinator.h; sourceTree = "<group>"; };
+		3927B4296B2B5B397D3E78AB /* CoordinatorFactoryImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordinatorFactoryImp.m; sourceTree = "<group>"; };
+		3927B4DA62939636BF3E42BD /* ItemCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCoordinator.m; sourceTree = SOURCE_ROOT; };
+		3927B501BFC1249C21CD371B /* CoordinatorFactoryImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordinatorFactoryImp.h; sourceTree = "<group>"; };
+		3927B5702A583974203E8F21 /* ItemCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCoordinator.h; sourceTree = SOURCE_ROOT; };
+		3927B5E9588F0294601FEF96 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3927B6FB4BCBB4801906ADA2 /* ApplicationCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationCoordinator.m; sourceTree = "<group>"; };
+		3927B74CCA243B8D51E576F8 /* CoordinatorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordinatorFactory.h; sourceTree = "<group>"; };
+		3927BCA773FEEBD9C06E3A6E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ED20E9D91DE9CB7E004911B2 /* ApplicationCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED20E9DD1DE9CB7E004911B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		ED20E9DF1DE9CB7E004911B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		ED20E9E01DE9CB7E004911B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		ED20E9E81DE9CB7E004911B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED20E9EB1DE9CB7E004911B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED20E9ED1DE9CB7E004911B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED20E9F51DE9CEA1004911B2 /* Coordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coordinator.h; sourceTree = "<group>"; };
 		ED20E9F71DE9D01F004911B2 /* BaseCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCoordinator.h; sourceTree = "<group>"; };
 		ED20E9F81DE9D01F004911B2 /* BaseCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCoordinator.m; sourceTree = "<group>"; };
-		ED20EA001DE9E035004911B2 /* Tabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tabbar.h; sourceTree = "<group>"; };
-		ED20EA011DE9E035004911B2 /* Tabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tabbar.m; sourceTree = "<group>"; };
+		ED20EA001DE9E035004911B2 /* TabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarViewController.h; sourceTree = "<group>"; };
+		ED20EA011DE9E035004911B2 /* TabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarViewController.m; sourceTree = "<group>"; };
 		ED20EA041DE9E07E004911B2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,6 +53,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3927B00478CF5E6E075EF63D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3927BCA773FEEBD9C06E3A6E /* AppDelegate.h */,
+				3927B5E9588F0294601FEF96 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		3927BB7EAE78E335B8AF6659 /* Imp */ = {
+			isa = PBXGroup;
+			children = (
+				3927B4296B2B5B397D3E78AB /* CoordinatorFactoryImp.m */,
+				3927B501BFC1249C21CD371B /* CoordinatorFactoryImp.h */,
+			);
+			path = Imp;
+			sourceTree = "<group>";
+		};
+		3927BFEBB43BFE80DA18BD8C /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				3927B74CCA243B8D51E576F8 /* CoordinatorFactory.h */,
+				3927BB7EAE78E335B8AF6659 /* Imp */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
 		ED20E9D01DE9CB7E004911B2 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +106,7 @@
 				ED20E9F61DE9D00D004911B2 /* Parents */,
 				ED20E9FA1DE9DE8E004911B2 /* Resources */,
 				ED20E9DC1DE9CB7E004911B2 /* Supporting Files */,
+				3927BFEBB43BFE80DA18BD8C /* Factories */,
 			);
 			path = ApplicationCoordinator;
 			sourceTree = "<group>";
@@ -89,9 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				ED20E9FE1DE9DF40004911B2 /* ApplicationCoordinator */,
-				ED20E9DF1DE9CB7E004911B2 /* AppDelegate.h */,
-				ED20E9E01DE9CB7E004911B2 /* AppDelegate.m */,
 				3927B1693B49D5C962C115C7 /* TabbarFlowOutput.h */,
+				3927B00478CF5E6E075EF63D /* AppDelegate */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -141,6 +175,8 @@
 		ED20E9FD1DE9DEF6004911B2 /* ItemsFlow */ = {
 			isa = PBXGroup;
 			children = (
+				3927B4DA62939636BF3E42BD /* ItemCoordinator.m */,
+				3927B5702A583974203E8F21 /* ItemCoordinator.h */,
 			);
 			path = ItemsFlow;
 			sourceTree = "<group>";
@@ -166,8 +202,8 @@
 		ED20EA031DE9E037004911B2 /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
-				ED20EA001DE9E035004911B2 /* Tabbar.h */,
-				ED20EA011DE9E035004911B2 /* Tabbar.m */,
+				ED20EA001DE9E035004911B2 /* TabbarViewController.h */,
+				ED20EA011DE9E035004911B2 /* TabbarViewController.m */,
 			);
 			path = Tabbar;
 			sourceTree = "<group>";
@@ -244,11 +280,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED20EA021DE9E035004911B2 /* Tabbar.m in Sources */,
-				ED20E9E11DE9CB7E004911B2 /* AppDelegate.m in Sources */,
+				ED20EA021DE9E035004911B2 /* TabbarViewController.m in Sources */,
 				ED20E9DE1DE9CB7E004911B2 /* main.m in Sources */,
 				ED20E9F91DE9D01F004911B2 /* BaseCoordinator.m in Sources */,
 				3927BD67FE050B99682BA9E8 /* ApplicationCoordinator.m in Sources */,
+				3927BE428AE32ADC3C4D03C0 /* CoordinatorFactoryImp.m in Sources */,
+				3927B102E3E6C351BFDFCD77 /* ItemCoordinator.m in Sources */,
+				3927B810099BB7E3D657D1FF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
