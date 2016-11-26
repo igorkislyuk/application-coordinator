@@ -5,8 +5,18 @@
 
 #import "ApplicationCoordinator.h"
 
+@interface ApplicationCoordinator ()
+
+@property (nonatomic, strong)
+
+@end
 
 @implementation ApplicationCoordinator {
 
 }
+
+- (void)start {
+
+}
+
 @end

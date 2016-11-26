@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  ApplicationCoordinator
+//
+//  Created by Igor on 26/11/16.
+//  Copyright © 2016 Igor Kislyuk. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+#endif /* PrefixHeader_pch */

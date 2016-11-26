@@ -4,7 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BaseCoordinator.h"
 
-
-@interface ApplicationCoordinator : NSObject
+@interface ApplicationCoordinator : BaseCoordinator
 @end

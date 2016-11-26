@@ -10,29 +10,29 @@
 		3927BD67FE050B99682BA9E8 /* ApplicationCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B6FB4BCBB4801906ADA2 /* ApplicationCoordinator.m */; };
 		ED20E9DE1DE9CB7E004911B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20E9DD1DE9CB7E004911B2 /* main.m */; };
 		ED20E9E11DE9CB7E004911B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20E9E01DE9CB7E004911B2 /* AppDelegate.m */; };
-		ED20E9E41DE9CB7E004911B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20E9E31DE9CB7E004911B2 /* ViewController.m */; };
-		ED20E9E71DE9CB7E004911B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED20E9E51DE9CB7E004911B2 /* Main.storyboard */; };
 		ED20E9E91DE9CB7E004911B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED20E9E81DE9CB7E004911B2 /* Assets.xcassets */; };
 		ED20E9EC1DE9CB7E004911B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED20E9EA1DE9CB7E004911B2 /* LaunchScreen.storyboard */; };
 		ED20E9F91DE9D01F004911B2 /* BaseCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20E9F81DE9D01F004911B2 /* BaseCoordinator.m */; };
+		ED20EA021DE9E035004911B2 /* Tabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20EA011DE9E035004911B2 /* Tabbar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3927B1693B49D5C962C115C7 /* TabbarFlowOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarFlowOutput.h; sourceTree = "<group>"; };
 		3927B1D89B5B1CCEB8234151 /* ApplicationCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationCoordinator.h; sourceTree = "<group>"; };
 		3927B6FB4BCBB4801906ADA2 /* ApplicationCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationCoordinator.m; sourceTree = "<group>"; };
 		ED20E9D91DE9CB7E004911B2 /* ApplicationCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED20E9DD1DE9CB7E004911B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED20E9DF1DE9CB7E004911B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ED20E9E01DE9CB7E004911B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ED20E9E21DE9CB7E004911B2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ED20E9E31DE9CB7E004911B2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		ED20E9E61DE9CB7E004911B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED20E9E81DE9CB7E004911B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED20E9EB1DE9CB7E004911B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED20E9ED1DE9CB7E004911B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED20E9F51DE9CEA1004911B2 /* Coordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coordinator.h; sourceTree = "<group>"; };
 		ED20E9F71DE9D01F004911B2 /* BaseCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCoordinator.h; sourceTree = "<group>"; };
 		ED20E9F81DE9D01F004911B2 /* BaseCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCoordinator.m; sourceTree = "<group>"; };
+		ED20EA001DE9E035004911B2 /* Tabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tabbar.h; sourceTree = "<group>"; };
+		ED20EA011DE9E035004911B2 /* Tabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tabbar.m; sourceTree = "<group>"; };
+		ED20EA041DE9E07E004911B2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,15 +66,12 @@
 			isa = PBXGroup;
 			children = (
 				ED20E9F31DE9CBC9004911B2 /* Application */,
+				ED20E9FB1DE9DEE7004911B2 /* Flows */,
+				ED20E9FF1DE9DFF0004911B2 /* InitialInterface */,
 				ED20E9F41DE9CE50004911B2 /* Main protocols */,
 				ED20E9F61DE9D00D004911B2 /* Parents */,
+				ED20E9FA1DE9DE8E004911B2 /* Resources */,
 				ED20E9DC1DE9CB7E004911B2 /* Supporting Files */,
-				ED20E9E81DE9CB7E004911B2 /* Assets.xcassets */,
-				ED20E9ED1DE9CB7E004911B2 /* Info.plist */,
-				ED20E9EA1DE9CB7E004911B2 /* LaunchScreen.storyboard */,
-				ED20E9E51DE9CB7E004911B2 /* Main.storyboard */,
-				ED20E9E21DE9CB7E004911B2 /* ViewController.h */,
-				ED20E9E31DE9CB7E004911B2 /* ViewController.m */,
 			);
 			path = ApplicationCoordinator;
 			sourceTree = "<group>";
@@ -82,21 +79,20 @@
 		ED20E9DC1DE9CB7E004911B2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ED20EA041DE9E07E004911B2 /* PrefixHeader.pch */,
 				ED20E9DD1DE9CB7E004911B2 /* main.m */,
 			);
-			name = "Supporting Files";
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		ED20E9F31DE9CBC9004911B2 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				ED20E9FE1DE9DF40004911B2 /* ApplicationCoordinator */,
 				ED20E9DF1DE9CB7E004911B2 /* AppDelegate.h */,
 				ED20E9E01DE9CB7E004911B2 /* AppDelegate.m */,
-				3927B6FB4BCBB4801906ADA2 /* ApplicationCoordinator.m */,
-				3927B1D89B5B1CCEB8234151 /* ApplicationCoordinator.h */,
+				3927B1693B49D5C962C115C7 /* TabbarFlowOutput.h */,
 			);
-			name = Application;
 			path = Application;
 			sourceTree = "<group>";
 		};
@@ -105,7 +101,6 @@
 			children = (
 				ED20E9F51DE9CEA1004911B2 /* Coordinator.h */,
 			);
-			name = "Main protocols";
 			path = "Main protocols";
 			sourceTree = "<group>";
 		};
@@ -115,8 +110,66 @@
 				ED20E9F71DE9D01F004911B2 /* BaseCoordinator.h */,
 				ED20E9F81DE9D01F004911B2 /* BaseCoordinator.m */,
 			);
-			name = Parents;
 			path = Parents;
+			sourceTree = "<group>";
+		};
+		ED20E9FA1DE9DE8E004911B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED20E9E81DE9CB7E004911B2 /* Assets.xcassets */,
+				ED20E9ED1DE9CB7E004911B2 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ED20E9FB1DE9DEE7004911B2 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				ED20E9FD1DE9DEF6004911B2 /* ItemsFlow */,
+				ED20E9FC1DE9DEEF004911B2 /* SettingsFlow */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		ED20E9FC1DE9DEEF004911B2 /* SettingsFlow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SettingsFlow;
+			sourceTree = "<group>";
+		};
+		ED20E9FD1DE9DEF6004911B2 /* ItemsFlow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ItemsFlow;
+			sourceTree = "<group>";
+		};
+		ED20E9FE1DE9DF40004911B2 /* ApplicationCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				3927B1D89B5B1CCEB8234151 /* ApplicationCoordinator.h */,
+				3927B6FB4BCBB4801906ADA2 /* ApplicationCoordinator.m */,
+			);
+			path = ApplicationCoordinator;
+			sourceTree = "<group>";
+		};
+		ED20E9FF1DE9DFF0004911B2 /* InitialInterface */ = {
+			isa = PBXGroup;
+			children = (
+				ED20EA031DE9E037004911B2 /* Tabbar */,
+				ED20E9EA1DE9CB7E004911B2 /* LaunchScreen.storyboard */,
+			);
+			path = InitialInterface;
+			sourceTree = "<group>";
+		};
+		ED20EA031DE9E037004911B2 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				ED20EA001DE9E035004911B2 /* Tabbar.h */,
+				ED20EA011DE9E035004911B2 /* Tabbar.m */,
+			);
+			path = Tabbar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,8 +220,6 @@
 			mainGroup = ED20E9D01DE9CB7E004911B2;
 			productRefGroup = ED20E9DA1DE9CB7E004911B2 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				ED20E9D81DE9CB7E004911B2 /* ApplicationCoordinator */,
@@ -183,7 +234,6 @@
 			files = (
 				ED20E9EC1DE9CB7E004911B2 /* LaunchScreen.storyboard in Resources */,
 				ED20E9E91DE9CB7E004911B2 /* Assets.xcassets in Resources */,
-				ED20E9E71DE9CB7E004911B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED20E9E41DE9CB7E004911B2 /* ViewController.m in Sources */,
+				ED20EA021DE9E035004911B2 /* Tabbar.m in Sources */,
 				ED20E9E11DE9CB7E004911B2 /* AppDelegate.m in Sources */,
 				ED20E9DE1DE9CB7E004911B2 /* main.m in Sources */,
 				ED20E9F91DE9D01F004911B2 /* BaseCoordinator.m in Sources */,
@@ -205,15 +255,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ED20E9E51DE9CB7E004911B2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ED20E9E61DE9CB7E004911B2 /* Base */,
-			);
-			name = Main.storyboard;
-			path = .;
-			sourceTree = "<group>";
-		};
 		ED20E9EA1DE9CB7E004911B2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -321,7 +362,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YQQ4NPWJXP;
-				INFOPLIST_FILE = ApplicationCoordinator/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ApplicationCoordinator/Supporting Files/PrefixHeader.pch";
+				INFOPLIST_FILE = ApplicationCoordinator/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.igorkislyuk.ApplicationCoordinator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -333,7 +377,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YQQ4NPWJXP;
-				INFOPLIST_FILE = ApplicationCoordinator/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ApplicationCoordinator/Supporting Files/PrefixHeader.pch";
+				INFOPLIST_FILE = ApplicationCoordinator/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.igorkislyuk.ApplicationCoordinator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,6 +406,7 @@
 				ED20E9F21DE9CB7E004911B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
