@@ -11,6 +11,7 @@
 		3927B810099BB7E3D657D1FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B5E9588F0294601FEF96 /* AppDelegate.m */; };
 		3927BD67FE050B99682BA9E8 /* ApplicationCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B6FB4BCBB4801906ADA2 /* ApplicationCoordinator.m */; };
 		3927BE428AE32ADC3C4D03C0 /* CoordinatorFactoryImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B4296B2B5B397D3E78AB /* CoordinatorFactoryImp.m */; };
+		3927BFDC618057B833D585BB /* RouterImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B0D163904E455A243F7E /* RouterImp.m */; };
 		ED20E9DE1DE9CB7E004911B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20E9DD1DE9CB7E004911B2 /* main.m */; };
 		ED20E9E91DE9CB7E004911B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED20E9E81DE9CB7E004911B2 /* Assets.xcassets */; };
 		ED20E9EC1DE9CB7E004911B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED20E9EA1DE9CB7E004911B2 /* LaunchScreen.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3927B0D163904E455A243F7E /* RouterImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouterImp.m; sourceTree = "<group>"; };
 		3927B1693B49D5C962C115C7 /* TabbarFlowOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarFlowOutput.h; sourceTree = "<group>"; };
 		3927B1D89B5B1CCEB8234151 /* ApplicationCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationCoordinator.h; sourceTree = "<group>"; };
 		3927B4296B2B5B397D3E78AB /* CoordinatorFactoryImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordinatorFactoryImp.m; sourceTree = "<group>"; };
@@ -28,7 +30,9 @@
 		3927B5E9588F0294601FEF96 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3927B6FB4BCBB4801906ADA2 /* ApplicationCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationCoordinator.m; sourceTree = "<group>"; };
 		3927B74CCA243B8D51E576F8 /* CoordinatorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordinatorFactory.h; sourceTree = "<group>"; };
+		3927BBE66AE60C4C0E09BD40 /* Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
 		3927BCA773FEEBD9C06E3A6E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3927BE0C5956B2C0E68EB995 /* RouterImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouterImp.h; sourceTree = "<group>"; };
 		ED20E9D91DE9CB7E004911B2 /* ApplicationCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED20E9DD1DE9CB7E004911B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED20E9E81DE9CB7E004911B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +64,16 @@
 				3927B5E9588F0294601FEF96 /* AppDelegate.m */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		3927BA2E89E37E545779CEA3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3927B0D163904E455A243F7E /* RouterImp.m */,
+				3927BE0C5956B2C0E68EB995 /* RouterImp.h */,
+				3927BBE66AE60C4C0E09BD40 /* Router.h */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		3927BB7EAE78E335B8AF6659 /* Imp */ = {
@@ -107,6 +121,7 @@
 				ED20E9FA1DE9DE8E004911B2 /* Resources */,
 				ED20E9DC1DE9CB7E004911B2 /* Supporting Files */,
 				3927BFEBB43BFE80DA18BD8C /* Factories */,
+				3927BA2E89E37E545779CEA3 /* Router */,
 			);
 			path = ApplicationCoordinator;
 			sourceTree = "<group>";
@@ -287,6 +302,7 @@
 				3927BE428AE32ADC3C4D03C0 /* CoordinatorFactoryImp.m in Sources */,
 				3927B102E3E6C351BFDFCD77 /* ItemCoordinator.m in Sources */,
 				3927B810099BB7E3D657D1FF /* AppDelegate.m in Sources */,
+				3927BFDC618057B833D585BB /* RouterImp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
