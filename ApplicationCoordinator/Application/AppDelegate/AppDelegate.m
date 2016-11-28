@@ -24,21 +24,28 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    //create controller
-    TabbarViewController *tabbarViewController = [[TabbarViewController alloc] init];
+//    //create controller
+//    TabbarViewController *tabbarViewController = [[TabbarViewController alloc] init];
+//    
+//    //load controllers
+//    UINavigationController *items = [[UINavigationController alloc] initWithNavigationBarClass:nil toolbarClass:nil];
+//    
+//    UINavigationController *settings = [[UINavigationController alloc] initWithNavigationBarClass:nil toolbarClass:nil];
+//    
+//    tabbarViewController.viewControllers = @[items, settings];
+//    
+//    //create window
+//    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    [window setRootViewController:tabbarViewController];
+//    [window addSubview:tabbarViewController.view];
+//    
+//    self.window = window;
+//    [self.window makeKeyAndVisible];
     
     //create coordinator
-    [self createApplicationCoordinatorWithViewController:tabbarViewController];
+    [self createApplicationCoordinatorWithViewController:(TabbarViewController *)(self.window.rootViewController)];
     
-    [_applicationCoordinator start]
-    
-    //create window
-    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    [window setRootViewController:tabbarViewController];
-    [window addSubview:tabbarViewController.view];
-    
-    self.window = window;
-    [self.window makeKeyAndVisible];
+    [_applicationCoordinator start];
     
     return YES;
 }

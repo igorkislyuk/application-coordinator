@@ -26,13 +26,6 @@
     [super viewDidLoad];
 
     self.delegate = self;
-
-    //load controllers
-    UINavigationController *items = [[UINavigationController alloc] initWithNavigationBarClass:nil toolbarClass:nil];
-
-    UINavigationController *settings = [[UINavigationController alloc] initWithNavigationBarClass:nil toolbarClass:nil];
-
-    self.viewControllers = @[items, settings];
     
     //post message
     if (self.onViewDidLoad) {

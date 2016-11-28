@@ -20,6 +20,7 @@
 		ED20E9F91DE9D01F004911B2 /* BaseCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20E9F81DE9D01F004911B2 /* BaseCoordinator.m */; };
 		ED20EA021DE9E035004911B2 /* TabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20EA011DE9E035004911B2 /* TabbarViewController.m */; };
 		ED20EA061DEC09CC004911B2 /* SimpleListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED20EA051DEC09CC004911B2 /* SimpleListViewController.xib */; };
+		ED20EA0A1DEC2385004911B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED20EA091DEC2385004911B2 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		ED20EA011DE9E035004911B2 /* TabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarViewController.m; sourceTree = "<group>"; };
 		ED20EA041DE9E07E004911B2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		ED20EA051DEC09CC004911B2 /* SimpleListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleListViewController.xib; sourceTree = "<group>"; };
+		ED20EA091DEC2385004911B2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +257,7 @@
 			children = (
 				ED20EA031DE9E037004911B2 /* Tabbar */,
 				ED20E9EA1DE9CB7E004911B2 /* LaunchScreen.storyboard */,
+				ED20EA091DEC2385004911B2 /* Main.storyboard */,
 			);
 			path = InitialInterface;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				ED20E9EC1DE9CB7E004911B2 /* LaunchScreen.storyboard in Resources */,
 				ED20EA061DEC09CC004911B2 /* SimpleListViewController.xib in Resources */,
 				ED20E9E91DE9CB7E004911B2 /* Assets.xcassets in Resources */,
+				ED20EA0A1DEC2385004911B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
