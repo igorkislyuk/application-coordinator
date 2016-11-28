@@ -35,6 +35,10 @@ factory for controllers
 
 output for each flow
 
+factory for controllers
+
+wrap it all out
+
 Initialiaze application coordinator from AppDelegate. Prefer using lazy initialization
 
 ## Stack technologies
