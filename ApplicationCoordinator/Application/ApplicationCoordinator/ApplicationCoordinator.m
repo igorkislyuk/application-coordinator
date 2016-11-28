@@ -12,13 +12,14 @@
 @interface ApplicationCoordinator ()
 
 @property (nonatomic, strong) id <TabbarFlowOutput> tabbar;
+
 @property (nonatomic, strong) id <CoordinatorFactory> coordinatorFactory;
 
 @end
 
 @implementation ApplicationCoordinator
 
-- (instancetype)initWithTabbar:(id <TabbarFlowOutput>)tabbar coordinatorFactory:(id <CoordinatorFactory>)coordinatorFactory {
+- (instancetype)initWithTabbar:(id <TabbarFlowOutput> )tabbar coordinatorFactory:(id <CoordinatorFactory>)coordinatorFactory {
     self = [super init];
     if (self) {
         self.tabbar = tabbar;

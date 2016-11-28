@@ -6,12 +6,14 @@
 #import "ItemCoordinator.h"
 #import "CoordinatorFactory.h"
 #import "Router.h"
+#import "ItemListOutput.h"
+#import "ItemControllersFactory.h"
 
 @interface ItemCoordinator ()
 
 @property (nonatomic, strong) id <CoordinatorFactory> coordinatorFactory;
 @property (nonatomic, strong) id <Router> router;
-//@property (nonatomic, strong) id <ItemControllersFactory> factory;
+@property (nonatomic, strong) id <ItemControllersFactory> factory;
 
 @end
 
@@ -19,11 +21,12 @@
 
 }
 
-- (instancetype)initWithCoordinatorFactory:(id <CoordinatorFactory>)coordinatorFactory router:(id <Router>)router {
+- (instancetype)initWithCoordinatorFactory:(id <CoordinatorFactory>)coordinatorFactory router:(id <Router>)router controllerFactory:(id <ItemControllersFactory>)factory {
     self = [super init];
     if (self) {
         _coordinatorFactory = coordinatorFactory;
         _router = router;
+        _factory = factory;
     }
 
     return self;
@@ -35,7 +38,9 @@
 
 - (void)showInitialController {
 
+    id <ItemListOutput> output = [self.factory createSimpleList];
 
+    [self.router setRootController:output];
 
 }
 

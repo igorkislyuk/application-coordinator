@@ -9,27 +9,49 @@
 #import "AppDelegate.h"
 
 #import "Coordinator.h"
+#import "ApplicationCoordinator.h"
+#import "CoordinatorFactoryImp.h"
+#import "TabbarViewController.h"
 
 @interface AppDelegate ()
-
-@property (nonatomic, readonly) id <Coordinator> applicationCoordinator;
 
 @end
 
 @implementation AppDelegate {
-    id <Coordinator> _applicationCoordinator;
+    ApplicationCoordinator *_applicationCoordinator;
 }
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    //create controller
+    TabbarViewController *tabbarViewController = [[TabbarViewController alloc] init];
+    
+    //create coordinator
+    [self createApplicationCoordinatorWithViewController:tabbarViewController];
+    
+    [_applicationCoordinator start]
+    
+    //create window
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [window setRootViewController:tabbarViewController];
+    [window addSubview:tabbarViewController.view];
+    
+    self.window = window;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
-- (id <Coordinator>)applicationCoordinator {
+- (void)createApplicationCoordinatorWithViewController:(id <TabbarFlowOutput>)vc {
     if (_applicationCoordinator == nil) {
+        
+        CoordinatorFactoryImp *coordinatorFactoryImp = [[CoordinatorFactoryImp alloc] init];
+        
         //create application coordinator
-        _applicationCoordinator =
+        _applicationCoordinator = [[ApplicationCoordinator alloc] initWithTabbar:vc
+                                                              coordinatorFactory:coordinatorFactoryImp];
+
     }
 }
 

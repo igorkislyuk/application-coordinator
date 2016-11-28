@@ -23,13 +23,17 @@ Add two methods for storing and removing dependencies of another coordinators
 
 Create application coordinator, that will be root coordinator. In this example it has tabbar as output (items and settings), also provide it with coordinators factory
 	
-For a tabbar configure several blocks, that will be fired on certain events. For example, didLoad event
-	of tab selection event. Normally each block should receive flow object, e.g. navigation controller. You can create coordinator from any place you want
+For a tabbar configure several blocks, that will be fired on certain events. For example, didLoad event of tab selection event. Normally each block should receive flow object, e.g. navigation controller. You can create coordinator from any place you want
 	
-After that create factory protocols for coordinators and provide implementation at least for one children coordinator of base type [ItemCoordinator], 
-	and use it in application coordinator
+After that create factory protocols for coordinators and provide implementation at least for one children coordinator of base type [ItemCoordinator], and use it in application coordinator
 
 Deal with the Router. It is neat class for push / present / pop / dismiss
+
+2 protocols for each view controller
+
+factory for controllers
+
+output for each flow
 
 Initialiaze application coordinator from AppDelegate. Prefer using lazy initialization
 

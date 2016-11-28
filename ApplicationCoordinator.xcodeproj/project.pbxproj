@@ -8,30 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		3927B102E3E6C351BFDFCD77 /* ItemCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B4DA62939636BF3E42BD /* ItemCoordinator.m */; };
+		3927B2E98010CAF74A083D42 /* CoordinatorFactoryImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B311E4A1DC7C7A9C8B64 /* CoordinatorFactoryImp.m */; };
 		3927B810099BB7E3D657D1FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B5E9588F0294601FEF96 /* AppDelegate.m */; };
+		3927B87E6BCCEB0A880D9614 /* SimpleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B8242477A85F9CBA28E2 /* SimpleListViewController.m */; };
+		3927BD093DBBFFFC81BCCFF3 /* ControllerFactoryImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B0501CC173A9E94574D4 /* ControllerFactoryImp.m */; };
 		3927BD67FE050B99682BA9E8 /* ApplicationCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B6FB4BCBB4801906ADA2 /* ApplicationCoordinator.m */; };
-		3927BE428AE32ADC3C4D03C0 /* CoordinatorFactoryImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B4296B2B5B397D3E78AB /* CoordinatorFactoryImp.m */; };
 		3927BFDC618057B833D585BB /* RouterImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B0D163904E455A243F7E /* RouterImp.m */; };
 		ED20E9DE1DE9CB7E004911B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20E9DD1DE9CB7E004911B2 /* main.m */; };
 		ED20E9E91DE9CB7E004911B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED20E9E81DE9CB7E004911B2 /* Assets.xcassets */; };
 		ED20E9EC1DE9CB7E004911B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED20E9EA1DE9CB7E004911B2 /* LaunchScreen.storyboard */; };
 		ED20E9F91DE9D01F004911B2 /* BaseCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20E9F81DE9D01F004911B2 /* BaseCoordinator.m */; };
 		ED20EA021DE9E035004911B2 /* TabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20EA011DE9E035004911B2 /* TabbarViewController.m */; };
+		ED20EA061DEC09CC004911B2 /* SimpleListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED20EA051DEC09CC004911B2 /* SimpleListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3927B0501CC173A9E94574D4 /* ControllerFactoryImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerFactoryImp.m; sourceTree = "<group>"; };
 		3927B0D163904E455A243F7E /* RouterImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouterImp.m; sourceTree = "<group>"; };
 		3927B1693B49D5C962C115C7 /* TabbarFlowOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarFlowOutput.h; sourceTree = "<group>"; };
 		3927B1D89B5B1CCEB8234151 /* ApplicationCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationCoordinator.h; sourceTree = "<group>"; };
-		3927B4296B2B5B397D3E78AB /* CoordinatorFactoryImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordinatorFactoryImp.m; sourceTree = "<group>"; };
-		3927B4DA62939636BF3E42BD /* ItemCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCoordinator.m; sourceTree = SOURCE_ROOT; };
-		3927B501BFC1249C21CD371B /* CoordinatorFactoryImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordinatorFactoryImp.h; sourceTree = "<group>"; };
-		3927B5702A583974203E8F21 /* ItemCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCoordinator.h; sourceTree = SOURCE_ROOT; };
+		3927B1EE9027E1FC8B025B40 /* ItemListOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemListOutput.h; sourceTree = "<group>"; };
+		3927B24112EE8B8FE0D4A3A2 /* SimpleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleListViewController.h; sourceTree = "<group>"; };
+		3927B2E0028DBE6D02FF647D /* CoordinatorFactoryImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordinatorFactoryImp.h; sourceTree = "<group>"; };
+		3927B311E4A1DC7C7A9C8B64 /* CoordinatorFactoryImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordinatorFactoryImp.m; sourceTree = "<group>"; };
+		3927B35321D77D6727D7A0B2 /* FlowControllerOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowControllerOutput.h; sourceTree = "<group>"; };
+		3927B4DA62939636BF3E42BD /* ItemCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCoordinator.m; sourceTree = "<group>"; };
+		3927B5702A583974203E8F21 /* ItemCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCoordinator.h; sourceTree = "<group>"; };
 		3927B5E9588F0294601FEF96 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3927B65291D49B48E1463CF9 /* ControllerFactoryImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerFactoryImp.h; sourceTree = "<group>"; };
 		3927B6FB4BCBB4801906ADA2 /* ApplicationCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationCoordinator.m; sourceTree = "<group>"; };
 		3927B74CCA243B8D51E576F8 /* CoordinatorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordinatorFactory.h; sourceTree = "<group>"; };
+		3927B804265C5F928CCAD53A /* ItemControllersFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemControllersFactory.h; sourceTree = "<group>"; };
+		3927B8242477A85F9CBA28E2 /* SimpleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleListViewController.m; sourceTree = "<group>"; };
 		3927BBE66AE60C4C0E09BD40 /* Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
 		3927BCA773FEEBD9C06E3A6E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3927BE016A7331130C6688BB /* FlowControllerInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowControllerInput.h; sourceTree = "<group>"; };
 		3927BE0C5956B2C0E68EB995 /* RouterImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouterImp.h; sourceTree = "<group>"; };
 		ED20E9D91DE9CB7E004911B2 /* ApplicationCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED20E9DD1DE9CB7E004911B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,6 +55,7 @@
 		ED20EA001DE9E035004911B2 /* TabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarViewController.h; sourceTree = "<group>"; };
 		ED20EA011DE9E035004911B2 /* TabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarViewController.m; sourceTree = "<group>"; };
 		ED20EA041DE9E07E004911B2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		ED20EA051DEC09CC004911B2 /* SimpleListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +78,40 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
+		3927B697A87D1E123A66E86D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				3927B2E0028DBE6D02FF647D /* CoordinatorFactoryImp.h */,
+				3927B311E4A1DC7C7A9C8B64 /* CoordinatorFactoryImp.m */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		3927B9243528AC9282CAF3D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3927B65291D49B48E1463CF9 /* ControllerFactoryImp.h */,
+				3927B0501CC173A9E94574D4 /* ControllerFactoryImp.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3927B96A70B6662D8F5B14B5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3927B24112EE8B8FE0D4A3A2 /* SimpleListViewController.h */,
+				3927B8242477A85F9CBA28E2 /* SimpleListViewController.m */,
+				ED20EA051DEC09CC004911B2 /* SimpleListViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		3927BA2E89E37E545779CEA3 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				3927B0D163904E455A243F7E /* RouterImp.m */,
-				3927BE0C5956B2C0E68EB995 /* RouterImp.h */,
 				3927BBE66AE60C4C0E09BD40 /* Router.h */,
+				3927BE0C5956B2C0E68EB995 /* RouterImp.h */,
+				3927B0D163904E455A243F7E /* RouterImp.m */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -79,8 +119,8 @@
 		3927BB7EAE78E335B8AF6659 /* Imp */ = {
 			isa = PBXGroup;
 			children = (
-				3927B4296B2B5B397D3E78AB /* CoordinatorFactoryImp.m */,
-				3927B501BFC1249C21CD371B /* CoordinatorFactoryImp.h */,
+				3927B9243528AC9282CAF3D1 /* Controller */,
+				3927B697A87D1E123A66E86D /* Coordinator */,
 			);
 			path = Imp;
 			sourceTree = "<group>";
@@ -88,8 +128,9 @@
 		3927BFEBB43BFE80DA18BD8C /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				3927B74CCA243B8D51E576F8 /* CoordinatorFactory.h */,
 				3927BB7EAE78E335B8AF6659 /* Imp */,
+				3927B74CCA243B8D51E576F8 /* CoordinatorFactory.h */,
+				3927B804265C5F928CCAD53A /* ItemControllersFactory.h */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -114,14 +155,14 @@
 			isa = PBXGroup;
 			children = (
 				ED20E9F31DE9CBC9004911B2 /* Application */,
+				3927BFEBB43BFE80DA18BD8C /* Factories */,
 				ED20E9FB1DE9DEE7004911B2 /* Flows */,
 				ED20E9FF1DE9DFF0004911B2 /* InitialInterface */,
 				ED20E9F41DE9CE50004911B2 /* Main protocols */,
 				ED20E9F61DE9D00D004911B2 /* Parents */,
 				ED20E9FA1DE9DE8E004911B2 /* Resources */,
-				ED20E9DC1DE9CB7E004911B2 /* Supporting Files */,
-				3927BFEBB43BFE80DA18BD8C /* Factories */,
 				3927BA2E89E37E545779CEA3 /* Router */,
+				ED20E9DC1DE9CB7E004911B2 /* Supporting Files */,
 			);
 			path = ApplicationCoordinator;
 			sourceTree = "<group>";
@@ -138,9 +179,9 @@
 		ED20E9F31DE9CBC9004911B2 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				3927B00478CF5E6E075EF63D /* AppDelegate */,
 				ED20E9FE1DE9DF40004911B2 /* ApplicationCoordinator */,
 				3927B1693B49D5C962C115C7 /* TabbarFlowOutput.h */,
-				3927B00478CF5E6E075EF63D /* AppDelegate */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -149,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				ED20E9F51DE9CEA1004911B2 /* Coordinator.h */,
+				3927BE016A7331130C6688BB /* FlowControllerInput.h */,
+				3927B35321D77D6727D7A0B2 /* FlowControllerOutput.h */,
 			);
 			path = "Main protocols";
 			sourceTree = "<group>";
@@ -190,8 +233,10 @@
 		ED20E9FD1DE9DEF6004911B2 /* ItemsFlow */ = {
 			isa = PBXGroup;
 			children = (
-				3927B4DA62939636BF3E42BD /* ItemCoordinator.m */,
+				3927B96A70B6662D8F5B14B5 /* Controllers */,
 				3927B5702A583974203E8F21 /* ItemCoordinator.h */,
+				3927B4DA62939636BF3E42BD /* ItemCoordinator.m */,
+				3927B1EE9027E1FC8B025B40 /* ItemListOutput.h */,
 			);
 			path = ItemsFlow;
 			sourceTree = "<group>";
@@ -284,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED20E9EC1DE9CB7E004911B2 /* LaunchScreen.storyboard in Resources */,
+				ED20EA061DEC09CC004911B2 /* SimpleListViewController.xib in Resources */,
 				ED20E9E91DE9CB7E004911B2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,10 +345,12 @@
 				ED20E9DE1DE9CB7E004911B2 /* main.m in Sources */,
 				ED20E9F91DE9D01F004911B2 /* BaseCoordinator.m in Sources */,
 				3927BD67FE050B99682BA9E8 /* ApplicationCoordinator.m in Sources */,
-				3927BE428AE32ADC3C4D03C0 /* CoordinatorFactoryImp.m in Sources */,
 				3927B102E3E6C351BFDFCD77 /* ItemCoordinator.m in Sources */,
 				3927B810099BB7E3D657D1FF /* AppDelegate.m in Sources */,
 				3927BFDC618057B833D585BB /* RouterImp.m in Sources */,
+				3927B2E98010CAF74A083D42 /* CoordinatorFactoryImp.m in Sources */,
+				3927BD093DBBFFFC81BCCFF3 /* ControllerFactoryImp.m in Sources */,
+				3927B87E6BCCEB0A880D9614 /* SimpleListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
