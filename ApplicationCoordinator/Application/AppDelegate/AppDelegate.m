@@ -23,24 +23,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-//    //create controller
-//    TabbarViewController *tabbarViewController = [[TabbarViewController alloc] init];
-//    
-//    //load controllers
-//    UINavigationController *items = [[UINavigationController alloc] initWithNavigationBarClass:nil toolbarClass:nil];
-//    
-//    UINavigationController *settings = [[UINavigationController alloc] initWithNavigationBarClass:nil toolbarClass:nil];
-//    
-//    tabbarViewController.viewControllers = @[items, settings];
-//    
-//    //create window
-//    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-//    [window setRootViewController:tabbarViewController];
-//    [window addSubview:tabbarViewController.view];
-//    
-//    self.window = window;
-//    [self.window makeKeyAndVisible];
+    
+//    [self createInterface];
     
     //create coordinator
     [self createApplicationCoordinatorWithViewController:(TabbarViewController *)(self.window.rootViewController)];
@@ -60,6 +44,28 @@
                                                               coordinatorFactory:coordinatorFactoryImp];
 
     }
+}
+
+- (void)createInterface {
+    
+    //create controller
+    TabbarViewController *tabbarViewController = [[TabbarViewController alloc] init];
+    
+    //load controllers
+    UINavigationController *items = [[UINavigationController alloc] initWithNavigationBarClass:nil toolbarClass:nil];
+    
+    UINavigationController *settings = [[UINavigationController alloc] initWithNavigationBarClass:nil toolbarClass:nil];
+    
+    tabbarViewController.viewControllers = @[items, settings];
+    
+    //create window
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [window setRootViewController:tabbarViewController];
+    [window addSubview:tabbarViewController.view];
+    
+    self.window = window;
+    [self.window makeKeyAndVisible];
+
 }
 
 

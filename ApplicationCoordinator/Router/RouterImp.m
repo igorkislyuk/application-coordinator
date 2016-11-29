@@ -66,7 +66,7 @@
 }
 
 - (void)setRootController:(UIViewController *)viewController {
-    NSParameterAssert([viewController isKindOfClass:[UINavigationController class]]);
+//    NSParameterAssert([viewController isKindOfClass:[UINavigationController class]]);
 
     [_navigationController setViewControllers:@[viewController] animated:YES];
 }
