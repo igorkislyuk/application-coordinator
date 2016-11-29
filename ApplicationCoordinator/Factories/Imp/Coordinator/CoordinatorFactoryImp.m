@@ -16,7 +16,7 @@
 - (BaseCoordinator *)createItemCoordinatorWith:(UINavigationController *)navigationController {
     CoordinatorFactoryImp *coordinatorFactoryImp = [[CoordinatorFactoryImp alloc] init];
     ControllerFactoryImp *controllerFactoryImp = [[ControllerFactoryImp alloc] init];
-    RouterImp *routerImp = [[RouterImp alloc] initWithNavigationController:[[UINavigationController alloc] init]];
+    RouterImp *routerImp = [[RouterImp alloc] initWithNavigationController:navigationController];
     BaseCoordinator *coordinator = [[ItemCoordinator alloc] initWithCoordinatorFactory:coordinatorFactoryImp
                                                                                 router:routerImp
                                                                      controllerFactory:controllerFactoryImp];

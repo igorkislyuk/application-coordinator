@@ -56,6 +56,9 @@
     
     UINavigationController *settings = [[UINavigationController alloc] initWithNavigationBarClass:nil toolbarClass:nil];
     
+    items.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Items" image:nil tag:0];
+    [settings setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Settings" image:nil tag:1]];
+    
     tabbarViewController.viewControllers = @[items, settings];
     
     //create window

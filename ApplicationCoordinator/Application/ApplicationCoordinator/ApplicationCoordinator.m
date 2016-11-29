@@ -57,8 +57,8 @@
 
             [self addDependency:itemCoordinator];
         } else {
-            NSLog(@"non-empty nav");
-            abort();
+//            NSLog(@"non-empty nav");
+//             abort();
         }
     };
 }

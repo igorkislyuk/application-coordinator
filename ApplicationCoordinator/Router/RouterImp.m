@@ -5,6 +5,8 @@
 
 #import "RouterImp.h"
 
+#import "SimpleListViewController.h"
+
 @implementation RouterImp {
     UINavigationController *_navigationController;
 }
@@ -66,9 +68,8 @@
 }
 
 - (void)setRootController:(UIViewController *)viewController {
-//    NSParameterAssert([viewController isKindOfClass:[UINavigationController class]]);
-
-    [_navigationController setViewControllers:@[viewController] animated:YES];
+    
+    [_navigationController setViewControllers:@[viewController] animated:NO];
 }
 
 - (void)popToRootAnimated:(BOOL)animated {
