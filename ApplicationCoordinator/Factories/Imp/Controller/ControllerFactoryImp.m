@@ -4,16 +4,22 @@
 //
 
 #import "ControllerFactoryImp.h"
-#import "ItemListOutput.h"
 #import "SimpleListViewController.h"
+#import "AuthViewController.h"
+#import "ItemListOutput.h"
 
 
 @implementation ControllerFactoryImp
 
-- (id <ItemListOutput>)createSimpleList {
+- (id <ItemListOutput>)createList {
 
     id <ItemListOutput> output = [[SimpleListViewController alloc] initWithNibName:NSStringFromClass([SimpleListViewController class]) bundle:nil];
 
+    return output;
+}
+
+- (id <AuthFlowOutput>)createAuthController {
+    id <AuthFlowOutput> output = [[AuthViewController alloc] initWithNibName:NSStringFromClass([AuthViewController class]) bundle:nil];
     return output;
 }
 

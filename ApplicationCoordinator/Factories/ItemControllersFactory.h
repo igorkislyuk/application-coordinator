@@ -10,6 +10,6 @@
 @protocol ItemControllersFactory <NSObject>
 
 @required
-- (id <ItemListOutput>)createSimpleList;
+- (id <ItemListOutput>)createList;
 
 @end

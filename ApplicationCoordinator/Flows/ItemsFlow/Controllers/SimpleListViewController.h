@@ -10,4 +10,8 @@
 
 @interface SimpleListViewController : UIViewController <ItemListOutput>
 
+@property(nonatomic, copy) EmptyBlock authNeeded;
+@property(nonatomic, copy) EmptyBlock onCreate;
+@property(nonatomic, copy) ListSelection onSelection;
+
 @end

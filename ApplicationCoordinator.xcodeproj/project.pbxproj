@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		3927B102E3E6C351BFDFCD77 /* ItemCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B4DA62939636BF3E42BD /* ItemCoordinator.m */; };
 		3927B2E98010CAF74A083D42 /* CoordinatorFactoryImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B311E4A1DC7C7A9C8B64 /* CoordinatorFactoryImp.m */; };
+		3927B560EF1C5475D74E3CC6 /* AuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B0DB6A757FD66B452864 /* AuthViewController.m */; };
+		3927B5918BC80FD58A4ABA63 /* AuthCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B33F9CD182E9803973C4 /* AuthCoordinator.m */; };
 		3927B810099BB7E3D657D1FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B5E9588F0294601FEF96 /* AppDelegate.m */; };
 		3927B87E6BCCEB0A880D9614 /* SimpleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B8242477A85F9CBA28E2 /* SimpleListViewController.m */; };
 		3927BD093DBBFFFC81BCCFF3 /* ControllerFactoryImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B0501CC173A9E94574D4 /* ControllerFactoryImp.m */; };
 		3927BD67FE050B99682BA9E8 /* ApplicationCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B6FB4BCBB4801906ADA2 /* ApplicationCoordinator.m */; };
+		3927BF00D6BB14A685AF81BA /* ItemList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BED546FE585D6A91546B /* ItemList.m */; };
 		3927BFDC618057B833D585BB /* RouterImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B0D163904E455A243F7E /* RouterImp.m */; };
 		ED20E9DE1DE9CB7E004911B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20E9DD1DE9CB7E004911B2 /* main.m */; };
 		ED20E9E91DE9CB7E004911B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED20E9E81DE9CB7E004911B2 /* Assets.xcassets */; };
@@ -21,30 +24,42 @@
 		ED20EA021DE9E035004911B2 /* TabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20EA011DE9E035004911B2 /* TabbarViewController.m */; };
 		ED20EA061DEC09CC004911B2 /* SimpleListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED20EA051DEC09CC004911B2 /* SimpleListViewController.xib */; };
 		ED20EA0A1DEC2385004911B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED20EA091DEC2385004911B2 /* Main.storyboard */; };
+		ED5E39991DEF76FC005A421B /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED5E39981DEF76FC005A421B /* AuthViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3927B036484EA0FB89AAA7D2 /* AuthControllersFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthControllersFactory.h; sourceTree = "<group>"; };
 		3927B0501CC173A9E94574D4 /* ControllerFactoryImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerFactoryImp.m; sourceTree = "<group>"; };
 		3927B0D163904E455A243F7E /* RouterImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouterImp.m; sourceTree = "<group>"; };
+		3927B0DB6A757FD66B452864 /* AuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthViewController.m; sourceTree = "<group>"; };
 		3927B1693B49D5C962C115C7 /* TabbarFlowOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarFlowOutput.h; sourceTree = "<group>"; };
 		3927B1D89B5B1CCEB8234151 /* ApplicationCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationCoordinator.h; sourceTree = "<group>"; };
-		3927B1EE9027E1FC8B025B40 /* ItemListOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemListOutput.h; sourceTree = "<group>"; };
 		3927B24112EE8B8FE0D4A3A2 /* SimpleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleListViewController.h; sourceTree = "<group>"; };
+		3927B2A9DAB9B820B83F8737 /* AuthFlowOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthFlowOutput.h; sourceTree = "<group>"; };
 		3927B2E0028DBE6D02FF647D /* CoordinatorFactoryImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordinatorFactoryImp.h; sourceTree = "<group>"; };
+		3927B302EE4DA56F3E206BB2 /* ItemListOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemListOutput.h; sourceTree = "<group>"; };
 		3927B311E4A1DC7C7A9C8B64 /* CoordinatorFactoryImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordinatorFactoryImp.m; sourceTree = "<group>"; };
+		3927B33F9CD182E9803973C4 /* AuthCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthCoordinator.m; sourceTree = "<group>"; };
+		3927B34AD6748DB96C143F82 /* AuthCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthCoordinator.h; sourceTree = "<group>"; };
 		3927B35321D77D6727D7A0B2 /* FlowControllerOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowControllerOutput.h; sourceTree = "<group>"; };
 		3927B4DA62939636BF3E42BD /* ItemCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCoordinator.m; sourceTree = "<group>"; };
 		3927B5702A583974203E8F21 /* ItemCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCoordinator.h; sourceTree = "<group>"; };
+		3927B57435D7211BC8651B21 /* BlockTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTypes.h; sourceTree = "<group>"; };
 		3927B5E9588F0294601FEF96 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3927B65291D49B48E1463CF9 /* ControllerFactoryImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerFactoryImp.h; sourceTree = "<group>"; };
 		3927B6FB4BCBB4801906ADA2 /* ApplicationCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationCoordinator.m; sourceTree = "<group>"; };
 		3927B74CCA243B8D51E576F8 /* CoordinatorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordinatorFactory.h; sourceTree = "<group>"; };
 		3927B804265C5F928CCAD53A /* ItemControllersFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemControllersFactory.h; sourceTree = "<group>"; };
 		3927B8242477A85F9CBA28E2 /* SimpleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleListViewController.m; sourceTree = "<group>"; };
+		3927B8F5F39735B7919CF359 /* AuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthViewController.h; sourceTree = "<group>"; };
+		3927B9314F736DBADF6FE62C /* ItemList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemList.h; sourceTree = "<group>"; };
+		3927BB387848BFAFD16BD8EE /* Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Blocks.h; sourceTree = "<group>"; };
 		3927BBE66AE60C4C0E09BD40 /* Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
 		3927BCA773FEEBD9C06E3A6E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3927BD3FCCBB93A5CC84133A /* AuthFlowOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthFlowOutput.h; sourceTree = "<group>"; };
 		3927BE016A7331130C6688BB /* FlowControllerInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowControllerInput.h; sourceTree = "<group>"; };
 		3927BE0C5956B2C0E68EB995 /* RouterImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouterImp.h; sourceTree = "<group>"; };
+		3927BED546FE585D6A91546B /* ItemList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemList.m; sourceTree = "<group>"; };
 		ED20E9D91DE9CB7E004911B2 /* ApplicationCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED20E9DD1DE9CB7E004911B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED20E9E81DE9CB7E004911B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +73,7 @@
 		ED20EA041DE9E07E004911B2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		ED20EA051DEC09CC004911B2 /* SimpleListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleListViewController.xib; sourceTree = "<group>"; };
 		ED20EA091DEC2385004911B2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		ED5E39981DEF76FC005A421B /* AuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +96,35 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
+		3927B2568085B710ED7BBA4D /* AuthFlow */ = {
+			isa = PBXGroup;
+			children = (
+				3927B33F9CD182E9803973C4 /* AuthCoordinator.m */,
+				3927B34AD6748DB96C143F82 /* AuthCoordinator.h */,
+				3927BD3FCCBB93A5CC84133A /* AuthFlowOutput.h */,
+				3927B704319A1C63D5E08E82 /* Controllers */,
+				3927BE12265D31667689CF14 /* Protocols */,
+			);
+			path = AuthFlow;
+			sourceTree = "<group>";
+		};
+		3927B536F4E8AB077E94AE18 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3927BED546FE585D6A91546B /* ItemList.m */,
+				3927B9314F736DBADF6FE62C /* ItemList.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3927B5A251FD38C16994C572 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3927B302EE4DA56F3E206BB2 /* ItemListOutput.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		3927B697A87D1E123A66E86D /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +132,16 @@
 				3927B311E4A1DC7C7A9C8B64 /* CoordinatorFactoryImp.m */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		3927B704319A1C63D5E08E82 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3927B8F5F39735B7919CF359 /* AuthViewController.h */,
+				3927B0DB6A757FD66B452864 /* AuthViewController.m */,
+				ED5E39981DEF76FC005A421B /* AuthViewController.xib */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		3927B9243528AC9282CAF3D1 /* Controller */ = {
@@ -127,12 +182,21 @@
 			path = Imp;
 			sourceTree = "<group>";
 		};
+		3927BE12265D31667689CF14 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3927B2A9DAB9B820B83F8737 /* AuthFlowOutput.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		3927BFEBB43BFE80DA18BD8C /* Factories */ = {
 			isa = PBXGroup;
 			children = (
 				3927BB7EAE78E335B8AF6659 /* Imp */,
 				3927B74CCA243B8D51E576F8 /* CoordinatorFactory.h */,
 				3927B804265C5F928CCAD53A /* ItemControllersFactory.h */,
+				3927B036484EA0FB89AAA7D2 /* AuthControllersFactory.h */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -165,6 +229,7 @@
 				ED20E9FA1DE9DE8E004911B2 /* Resources */,
 				3927BA2E89E37E545779CEA3 /* Router */,
 				ED20E9DC1DE9CB7E004911B2 /* Supporting Files */,
+				3927B536F4E8AB077E94AE18 /* Classes */,
 			);
 			path = ApplicationCoordinator;
 			sourceTree = "<group>";
@@ -174,6 +239,8 @@
 			children = (
 				ED20EA041DE9E07E004911B2 /* PrefixHeader.pch */,
 				ED20E9DD1DE9CB7E004911B2 /* main.m */,
+				3927BB387848BFAFD16BD8EE /* Blocks.h */,
+				3927B57435D7211BC8651B21 /* BlockTypes.h */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -221,6 +288,7 @@
 			children = (
 				ED20E9FD1DE9DEF6004911B2 /* ItemsFlow */,
 				ED20E9FC1DE9DEEF004911B2 /* SettingsFlow */,
+				3927B2568085B710ED7BBA4D /* AuthFlow */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -238,7 +306,7 @@
 				3927B96A70B6662D8F5B14B5 /* Controllers */,
 				3927B5702A583974203E8F21 /* ItemCoordinator.h */,
 				3927B4DA62939636BF3E42BD /* ItemCoordinator.m */,
-				3927B1EE9027E1FC8B025B40 /* ItemListOutput.h */,
+				3927B5A251FD38C16994C572 /* Protocols */,
 			);
 			path = ItemsFlow;
 			sourceTree = "<group>";
@@ -333,6 +401,7 @@
 			files = (
 				ED20E9EC1DE9CB7E004911B2 /* LaunchScreen.storyboard in Resources */,
 				ED20EA061DEC09CC004911B2 /* SimpleListViewController.xib in Resources */,
+				ED5E39991DEF76FC005A421B /* AuthViewController.xib in Resources */,
 				ED20E9E91DE9CB7E004911B2 /* Assets.xcassets in Resources */,
 				ED20EA0A1DEC2385004911B2 /* Main.storyboard in Resources */,
 			);
@@ -355,6 +424,9 @@
 				3927B2E98010CAF74A083D42 /* CoordinatorFactoryImp.m in Sources */,
 				3927BD093DBBFFFC81BCCFF3 /* ControllerFactoryImp.m in Sources */,
 				3927B87E6BCCEB0A880D9614 /* SimpleListViewController.m in Sources */,
+				3927BF00D6BB14A685AF81BA /* ItemList.m in Sources */,
+				3927B5918BC80FD58A4ABA63 /* AuthCoordinator.m in Sources */,
+				3927B560EF1C5475D74E3CC6 /* AuthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

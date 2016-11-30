@@ -6,7 +6,7 @@
 #import "ItemCoordinator.h"
 #import "CoordinatorFactory.h"
 #import "Router.h"
-#import "ItemListOutput.h"
+#import "Protocols/ItemListOutput.h"
 #import "ItemControllersFactory.h"
 
 @interface ItemCoordinator ()
@@ -33,16 +33,28 @@
 }
 
 - (void)start {
-    [self showInitialController];
+    [self showList];
 }
 
-- (void)showInitialController {
+- (void)showList {
 
-    id <ItemListOutput> output = [self.factory createSimpleList];
+    id <ItemListOutput> output = [self.factory createList];
+
+    BlockWeakSelf weakSelf = self;
+    output.authNeeded = ^{
+        BlockStrongSelf strongSelf = weakSelf;
+        BlockCheckStrongSelf(strongSelf);
+
+        [strongSelf runAuthCoordinator];
+    };
+
 
     [self.router setRootController:output];
 
 }
 
+- (void)runAuthCoordinator {
+
+}
 
 @end

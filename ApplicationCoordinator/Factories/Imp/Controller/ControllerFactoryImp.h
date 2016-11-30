@@ -5,7 +5,10 @@
 
 #import <Foundation/Foundation.h>
 #import "ItemControllersFactory.h"
+#import "AuthControllersFactory.h"
 
-@interface ControllerFactoryImp : NSObject <ItemControllersFactory>
+@interface ControllerFactoryImp : NSObject <
+        ItemControllersFactory,
+        AuthControllersFactory>
 
 @end
