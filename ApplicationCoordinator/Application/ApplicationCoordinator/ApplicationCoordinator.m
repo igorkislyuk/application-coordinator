@@ -44,7 +44,7 @@
 - (id <TabbarFlowOutput>)createRootController {
 
     //create controller
-    TabbarViewController *tabbarViewController = [[TabbarViewController alloc] init];
+    TabbarViewController *tabbarViewController = [[TabbarViewController alloc] initWithNibName:nil bundle:nil];
 
     //load controllers
     UINavigationController *items = [[UINavigationController alloc] initWithNavigationBarClass:nil toolbarClass:nil];
@@ -69,7 +69,6 @@
     self.tabbar.onViewDidLoad = [self blockForRun];
     self.tabbar.itemFlowDidSelect = [self blockForRun];
     self.tabbar.settingsFlowDidSelect = settingsRun;
-    
 }
 
 - (NavigationBlock)blockForRun {

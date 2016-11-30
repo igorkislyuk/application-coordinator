@@ -45,13 +45,13 @@
 
 - (void)createApplicationCoordinator {
     if (_applicationCoordinator == nil) {
-        
+    
         CoordinatorFactoryImp *coordinatorFactoryImp = [[CoordinatorFactoryImp alloc] init];
         
         //create application coordinator
 //        _applicationCoordinator = [[ApplicationCoordinator alloc] initWithCoordinatorFactory:coordinatorFactoryImp];
         
-        _applicationCoordinator = [[ApplicationCoordinator alloc] initWithTabbar:self.window.rootViewController coordinatorFactory:coordinatorFactoryImp];
+        _applicationCoordinator = [[ApplicationCoordinator alloc] initWithTabbar:(id <TabbarFlowOutput>)self.window.rootViewController coordinatorFactory:coordinatorFactoryImp];
 
     }
 }
