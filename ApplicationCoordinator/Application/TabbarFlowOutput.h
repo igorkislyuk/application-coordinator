@@ -11,4 +11,6 @@ typedef void(^NavigationBlock)(UINavigationController *navigationController);
 @property(nonatomic, copy) NavigationBlock settingsFlowDidSelect;
 @property(nonatomic, copy) NavigationBlock onViewDidLoad;
 
+@property (nonatomic) NSArray *viewControllers;
+
 @end

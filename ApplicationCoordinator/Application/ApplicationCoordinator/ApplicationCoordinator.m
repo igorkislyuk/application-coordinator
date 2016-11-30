@@ -33,11 +33,8 @@
 }
 
 - (void)start {
-
-//    NavigationBlock runItem =
     
     NavigationBlock settingsRun = ^(UINavigationController *navigationController) {
-        
         
         
     };
@@ -46,6 +43,8 @@
     self.tabbar.itemFlowDidSelect = [self blockForRun];
     self.tabbar.settingsFlowDidSelect = settingsRun;
 
+    //This is bad code, that refresh view of tabbar
+//    [[[[[[self.tabbar viewControllers] firstObject] viewControllers] firstObject] view] setNeedsDisplay];
     
 }
 
@@ -53,12 +52,10 @@
     return ^(UINavigationController *navigationController) {
         if (navigationController.viewControllers.count == 0) {
             ItemCoordinator *itemCoordinator = (ItemCoordinator *) [self.coordinatorFactory createItemCoordinatorWith:navigationController];
+            
             [itemCoordinator start];
 
             [self addDependency:itemCoordinator];
-        } else {
-//            NSLog(@"non-empty nav");
-//             abort();
         }
     };
 }
