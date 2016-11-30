@@ -56,5 +56,5 @@ Currently tests are not used.
 
 ## License
 
-Example project for learning using coordinators.
+Totally free. Example project for learning using coordinators.
 

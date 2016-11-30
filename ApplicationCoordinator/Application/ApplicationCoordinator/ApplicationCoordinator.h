@@ -11,6 +11,11 @@
 
 @interface ApplicationCoordinator : BaseCoordinator
 
+@property (nonatomic, strong) id <TabbarFlowOutput> tabbar;
+
+- (instancetype)initWithCoordinatorFactory:(id <CoordinatorFactory>)coordinatorFactory;
+
 - (instancetype)initWithTabbar:(id <TabbarFlowOutput>)tabbar coordinatorFactory:(id <CoordinatorFactory>)coordinatorFactory;
+
 
 @end

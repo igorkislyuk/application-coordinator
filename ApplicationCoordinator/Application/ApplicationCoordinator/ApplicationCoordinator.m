@@ -8,10 +8,9 @@
 #import "TabbarFlowOutput.h"
 #import "CoordinatorFactory.h"
 #import "ItemCoordinator.h"
+#import "TabbarViewController.h"
 
 @interface ApplicationCoordinator ()
-
-@property (nonatomic, strong) id <TabbarFlowOutput> tabbar;
 
 @property (nonatomic, strong) id <CoordinatorFactory> coordinatorFactory;
 
@@ -19,17 +18,45 @@
 
 @implementation ApplicationCoordinator
 
-- (instancetype)initWithTabbar:(id <TabbarFlowOutput> )tabbar coordinatorFactory:(id <CoordinatorFactory>)coordinatorFactory {
+- (instancetype)initWithTabbar:(id <TabbarFlowOutput>)tabbar coordinatorFactory:(id <CoordinatorFactory>)coordinatorFactory {
     self = [super init];
-    
     if (self) {
-        self.tabbar = tabbar;
-        self.coordinatorFactory = coordinatorFactory;
-        
-        
+        _tabbar = tabbar;
+        _coordinatorFactory = coordinatorFactory;
     }
 
     return self;
+}
+
+- (instancetype)initWithCoordinatorFactory:(id <CoordinatorFactory>)coordinatorFactory {
+    self = [super init];
+    
+    if (self) {
+
+        _tabbar = [self createRootController];
+        _coordinatorFactory = coordinatorFactory;
+
+    }
+
+    return self;
+}
+
+- (id <TabbarFlowOutput>)createRootController {
+
+    //create controller
+    TabbarViewController *tabbarViewController = [[TabbarViewController alloc] init];
+
+    //load controllers
+    UINavigationController *items = [[UINavigationController alloc] initWithNavigationBarClass:nil toolbarClass:nil];
+
+    UINavigationController *settings = [[UINavigationController alloc] initWithNavigationBarClass:nil toolbarClass:nil];
+
+    items.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Items" image:nil tag:0];
+    settings.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Settings" image:nil tag:1];
+
+    tabbarViewController.viewControllers = @[items, settings];
+
+    return tabbarViewController;
 }
 
 - (void)start {
@@ -42,9 +69,6 @@
     self.tabbar.onViewDidLoad = [self blockForRun];
     self.tabbar.itemFlowDidSelect = [self blockForRun];
     self.tabbar.settingsFlowDidSelect = settingsRun;
-
-    //This is bad code, that refresh view of tabbar
-//    [[[[[[self.tabbar viewControllers] firstObject] viewControllers] firstObject] view] setNeedsDisplay];
     
 }
 
