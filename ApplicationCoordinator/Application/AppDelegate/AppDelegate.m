@@ -24,12 +24,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-//    [self createInterface];
+    
     
     //create coordinator
     [self createApplicationCoordinatorWithViewController:(TabbarViewController *)(self.window.rootViewController)];
     
     [_applicationCoordinator start];
+    
+    [self createInterface];
     
     return YES;
 }
@@ -47,6 +49,7 @@
 }
 
 - (void)createInterface {
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     //create controller
     TabbarViewController *tabbarViewController = [[TabbarViewController alloc] init];
@@ -60,14 +63,13 @@
     [settings setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Settings" image:nil tag:1]];
     
     tabbarViewController.viewControllers = @[items, settings];
-    
-    //create window
-    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    [window setRootViewController:tabbarViewController];
     [window addSubview:tabbarViewController.view];
     
+    //create window
     self.window = window;
     [self.window makeKeyAndVisible];
+    
+    [window setRootViewController:tabbarViewController];
 
 }
 
