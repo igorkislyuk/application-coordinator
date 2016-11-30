@@ -15,31 +15,35 @@ https://github.com/AndreyPanov/ApplicationCoordinator
 
 ## Guidelines for creating ApplicationCoordinator
 
-First we start with Coordinator protocol. Declare at least one method - start()
+First we start with `Coordinator` protocol. Declare at least one method - `start`
 
-Create base class [BaseCoordinator] for all coordinators which will inherited by. It should adopt Coordinators protocol.
+Create base class `BaseCoordinator` for all coordinators which will inherited by. It should adopt `Coordinator` protocol.
 
-Add two methods for storing and removing dependencies of another coordinators
+Add two methods for storing and removing dependencies of another coordinators: `addDependency:` & `removeDependency:`
 
 Create application coordinator, that will be root coordinator. In this example it has tabbar as output (items and settings), also provide it with coordinators factory
 	
-For a tabbar configure several blocks, that will be fired on certain events. For example, didLoad event of tab selection event. Normally each block should receive flow object, e.g. navigation controller. You can create coordinator from any place you want
+For a tabbar configure several blocks, that will be fired on certain events. For example, didLoad event of tab selection event. Normally each block should receive flow object, e.g. navigation controller.
 	
-After that create factory protocols for coordinators and provide implementation at least for one children coordinator of base type [ItemCoordinator], and use it in application coordinator
+After that create factory protocols for coordinators and provide implementation at least for one children coordinator `ItemCoordinator`, and use it in application coordinator
 
-Deal with the Router. It is neat class for push / present / pop / dismiss
+Deal with the `Router`. It is neat class for push / present / pop / dismiss
 
-2 protocols for each view controller
+Create 2 protocols for each view controller, like `FlowControllerInput` & `FlowControllerOutput`
 
-factory for controllers
+Than you should deal with the factory for controllers. Normally , you should create protocol for each factory implementation and depends on it. Keeping things simple, we adopt one factory implementation for all factory controllers protocols.
 
-output for each flow
+Than you should create output for each controller in the flow. E.g. `ItemListOutput` for `ItemListViewController`
 
-factory for controllers
+After that you can freely initialiaze application coordinator from AppDelegate. Prefer using lazy initialization.
 
-wrap it all out
+## Problem section
 
-Initialiaze application coordinator from AppDelegate. Prefer using lazy initialization
+The one problem I faced it method call order. When we use pure xib-files, and create window manually, we faced with wrong order of methods: viewDidLoad of tabbar controller called earlier than simple start method in ApplicationCoordinator. So after switch to storyboard, problem simply gone. Otherwise, we can't call start method of root coordinator earlier, because we should init coordinator with init-ed controller. It's a bit sophisticated, I'm sorry, just maybe don't know some stuff...
+
+## TODO
+
+- write it here, what needs to be done.
 
 ## Stack technologies
 

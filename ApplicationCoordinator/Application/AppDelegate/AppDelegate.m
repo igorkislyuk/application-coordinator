@@ -24,31 +24,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
-    //create controller
-    TabbarViewController *tabbarViewController = [[TabbarViewController alloc] init];
-    
-    //load controllers
-    UINavigationController *items = [[UINavigationController alloc] initWithNavigationBarClass:nil toolbarClass:nil];
-    
-    UINavigationController *settings = [[UINavigationController alloc] initWithNavigationBarClass:nil toolbarClass:nil];
-    
-    items.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Items" image:nil tag:0];
-    [settings setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Settings" image:nil tag:1]];
-    
-    tabbarViewController.viewControllers = @[items, settings];
-    
     //create coordinator
-    [self createApplicationCoordinatorWithViewController:(TabbarViewController *)(tabbarViewController)];
+    [self createApplicationCoordinatorWithViewController:(TabbarViewController *)(self.window.rootViewController)];
     
     [_applicationCoordinator start];
     
-    [window addSubview:tabbarViewController.view];
-    [window setRootViewController:tabbarViewController];
-
-    [window makeKeyAndVisible];
-    self.window = window;
     
     return YES;
 }
@@ -65,8 +45,31 @@
     }
 }
 
+/**
+ Method that will be used for projects without storyboards.
+ */
 - (void)createInterface {
 
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    //create controller
+    TabbarViewController *tabbarViewController = [[TabbarViewController alloc] init];
+    
+    //load controllers
+    UINavigationController *items = [[UINavigationController alloc] initWithNavigationBarClass:nil toolbarClass:nil];
+    
+    UINavigationController *settings = [[UINavigationController alloc] initWithNavigationBarClass:nil toolbarClass:nil];
+    
+    items.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Items" image:nil tag:0];
+    [settings setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Settings" image:nil tag:1]];
+    
+    tabbarViewController.viewControllers = @[items, settings];
+    
+    [window addSubview:tabbarViewController.view];
+    [window setRootViewController:tabbarViewController];
+    
+    [window makeKeyAndVisible];
+    self.window = window;
 }
 
 
