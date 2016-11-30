@@ -6,7 +6,8 @@
 #import "ItemCoordinator.h"
 #import "CoordinatorFactory.h"
 #import "Router.h"
-#import "Protocols/ItemListOutput.h"
+#import "ItemListOutput.h"
+#import "AuthFlowOutput.h"
 #import "ItemControllersFactory.h"
 
 @interface ItemCoordinator ()
@@ -47,13 +48,27 @@
 
         [strongSelf runAuthCoordinator];
     };
-
-
-    [self.router setRootController:output];
+    
+    [self.router setRootController:[output toPresent]];
 
 }
 
 - (void)runAuthCoordinator {
+    
+    id <AuthFlowOutput, Coordinator> authCoord = [self.coordinatorFactory createAuthCoordinatorWith:self.router.navigationController];
+    
+    BlockWeakSelf weak = self;
+    authCoord.finishFlow = ^{
+        BlockStrongSelf strong = weak;
+        BlockCheckStrongSelf(strong);
+        
+        [strong.router dismissControllerAnimated:YES completion:nil];
+        [strong removeDependency:authCoord];
+        
+    };
+    
+    [self addDependency:authCoord];
+    [authCoord start];
 
 }
 

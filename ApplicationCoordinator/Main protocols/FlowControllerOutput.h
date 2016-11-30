@@ -5,5 +5,12 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol FlowControllerOutput <NSObject>
+@protocol Presentable <NSObject>
+
+@required
+- (UIViewController *)toPresent;
+
+@end
+
+@protocol FlowControllerOutput <Presentable>
 @end

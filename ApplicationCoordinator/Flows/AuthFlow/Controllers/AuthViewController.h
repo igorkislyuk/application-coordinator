@@ -6,10 +6,10 @@
 //  Copyright (c) 2016 Igor Kislyuk. All rights reserved.
 //
 
+#import "AuthControllerOutput.h"
 
+@interface AuthViewController : UIViewController <AuthControllerOutput>
 
-#import "AuthFlowOutput.h"
-
-@interface AuthViewController : UIViewController <AuthFlowOutput>
+@property(nonatomic, copy) EmptyBlock authFinished;
 
 @end

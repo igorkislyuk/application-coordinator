@@ -6,10 +6,12 @@
 #import <Foundation/Foundation.h>
 #import "BaseCoordinator.h"
 #import "AuthFlowOutput.h"
-
+#import "AuthControllersFactory.h"
 
 @interface AuthCoordinator : BaseCoordinator <AuthFlowOutput>
 
-@property(nonatomic, copy) EmptyBlock authFinished;
+- (instancetype)initWithRouter:(id <Router>)router factory:(id <AuthControllersFactory>)factory;
+
+@property(nonatomic, copy) EmptyBlock finishFlow;
 
 @end

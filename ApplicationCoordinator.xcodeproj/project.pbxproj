@@ -35,7 +35,7 @@
 		3927B1693B49D5C962C115C7 /* TabbarFlowOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarFlowOutput.h; sourceTree = "<group>"; };
 		3927B1D89B5B1CCEB8234151 /* ApplicationCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationCoordinator.h; sourceTree = "<group>"; };
 		3927B24112EE8B8FE0D4A3A2 /* SimpleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleListViewController.h; sourceTree = "<group>"; };
-		3927B2A9DAB9B820B83F8737 /* AuthFlowOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthFlowOutput.h; sourceTree = "<group>"; };
+		3927B2A9DAB9B820B83F8737 /* AuthControllerOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthControllerOutput.h; sourceTree = "<group>"; };
 		3927B2E0028DBE6D02FF647D /* CoordinatorFactoryImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordinatorFactoryImp.h; sourceTree = "<group>"; };
 		3927B302EE4DA56F3E206BB2 /* ItemListOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemListOutput.h; sourceTree = "<group>"; };
 		3927B311E4A1DC7C7A9C8B64 /* CoordinatorFactoryImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordinatorFactoryImp.m; sourceTree = "<group>"; };
@@ -185,7 +185,7 @@
 		3927BE12265D31667689CF14 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				3927B2A9DAB9B820B83F8737 /* AuthFlowOutput.h */,
+				3927B2A9DAB9B820B83F8737 /* AuthControllerOutput.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";

@@ -5,10 +5,10 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol AuthFlowOutput;
+@protocol AuthControllerOutput;
 
 @protocol AuthControllersFactory <NSObject>
 
-- (id <AuthFlowOutput>)createAuthController;
+- (id <AuthControllerOutput>)createAuthController;
 
 @end

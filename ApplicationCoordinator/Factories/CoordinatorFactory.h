@@ -5,7 +5,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol Coordinator;
+@protocol Coordinator, AuthFlowOutput;
 @class BaseCoordinator;
 
 @protocol CoordinatorFactory <NSObject>
@@ -14,5 +14,8 @@
 - (BaseCoordinator *)createItemCoordinatorWith:(UINavigationController *)navigationController;
 - (BaseCoordinator *)createItemCoordinator;
 
+@required
+- (id <AuthFlowOutput, Coordinator>)createAuthCoordinatorWith:(UINavigationController *)navigationController;
+- (id <AuthFlowOutput, Coordinator>)createAuthCoordinator;
 
 @end

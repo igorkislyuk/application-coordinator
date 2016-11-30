@@ -8,6 +8,6 @@
 @protocol AuthFlowOutput <NSObject>
 
 @required
-@property(nonatomic, copy) EmptyBlock authFinished;
+@property(nonatomic, copy) EmptyBlock finishFlow;
 
 @end

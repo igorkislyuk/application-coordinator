@@ -18,8 +18,8 @@
     return output;
 }
 
-- (id <AuthFlowOutput>)createAuthController {
-    id <AuthFlowOutput> output = [[AuthViewController alloc] initWithNibName:NSStringFromClass([AuthViewController class]) bundle:nil];
+- (id <AuthControllerOutput>)createAuthController {
+    id <AuthControllerOutput> output = [[AuthViewController alloc] initWithNibName:NSStringFromClass([AuthViewController class]) bundle:nil];
     return output;
 }
 
