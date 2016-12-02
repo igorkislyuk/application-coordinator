@@ -3,7 +3,9 @@
 // Copyright (c) 2016 Igor Kislyuk. All rights reserved.
 //
 
-@interface ItemCreateCoordinator : NSObject
+#import "ItemCreateCoordinatorOutput.h"
+
+@interface ItemCreateCoordinator : BaseCoordinator <ItemCreateCoordinatorOutput>
 
 @property(nonatomic, copy) EmptyBlock finishFlow;
 

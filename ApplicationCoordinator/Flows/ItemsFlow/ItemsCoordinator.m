@@ -8,13 +8,13 @@
 #import "Router.h"
 #import "ItemsControllerOutput.h"
 #import "AuthFlowOutput.h"
-#import "ItemControllersFactory.h"
+#import "ItemsControllersFactory.h"
 
 @interface ItemsCoordinator ()
 
 @property (nonatomic, strong) id <CoordinatorFactory> coordinatorFactory;
 @property (nonatomic, strong) id <Router> router;
-@property (nonatomic, strong) id <ItemControllersFactory> factory;
+@property (nonatomic, strong) id <ItemsControllersFactory> factory;
 
 @end
 
@@ -22,7 +22,7 @@
 
 }
 
-- (instancetype)initWithCoordinatorFactory:(id <CoordinatorFactory>)coordinatorFactory router:(id <Router>)router controllerFactory:(id <ItemControllersFactory>)factory {
+- (instancetype)initWithCoordinatorFactory:(id <CoordinatorFactory>)coordinatorFactory router:(id <Router>)router controllerFactory:(id <ItemsControllersFactory>)factory {
     self = [super init];
     if (self) {
         _coordinatorFactory = coordinatorFactory;
@@ -49,7 +49,7 @@
 //        [strongSelf runAuthCoordinator];
 //    };
 
-    output.onSelection = ^(ItemList *itemList){
+    output.onSelection = ^(Item *itemList){
 
     };
 

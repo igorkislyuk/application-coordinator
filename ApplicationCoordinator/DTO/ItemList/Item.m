@@ -3,10 +3,10 @@
 // Copyright (c) 2016 Igor Kislyuk. All rights reserved.
 //
 
-#import "ItemList.h"
+#import "Item.h"
 
 
-@implementation ItemList {
+@implementation Item {
 
 }
 @end

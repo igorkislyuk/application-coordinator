@@ -60,6 +60,12 @@ The one problem I faced it method call order. When we use pure xib-files, and cr
 
 - write it here, what needs to be done.
 
+- clear useless code
+- clear header files
+- hide some logic from settings? coordinator
+- add some tables
+- remove passing nils
+
 ## Stack technologies
 
 - ObjC 

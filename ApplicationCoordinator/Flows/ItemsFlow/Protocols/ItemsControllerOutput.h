@@ -6,8 +6,8 @@
 #import <Foundation/Foundation.h>
 #import "FlowControllerOutput.h"
 
-@class ItemList;
-typedef void(^ListSelection)(ItemList *itemList);
+@class Item;
+typedef void(^ListSelection)(Item *itemList);
 
 @protocol ItemsControllerOutput <FlowControllerOutput>
 

@@ -11,6 +11,7 @@
 		3927B0334845C88600AEBDC1 /* SettingsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B12816E084CEBD7B446D /* SettingsItem.m */; };
 		3927B102E3E6C351BFDFCD77 /* ItemsCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B4DA62939636BF3E42BD /* ItemsCoordinator.m */; };
 		3927B11A5D5793B4EBBC2FE2 /* UIViewController+Storyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B52253EA281C45ECC425 /* UIViewController+Storyboard.m */; };
+		3927B16C337A46C7388AD268 /* ItemCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B904A5FE142186D0B3DB /* ItemCreateViewController.m */; };
 		3927B1B65090815C02749DE5 /* RouterImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BB4491CB0BE07F804E43 /* RouterImp.m */; };
 		3927B2676206AFD82175E23A /* SettingsCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BD5029988429004642F9 /* SettingsCoordinator.m */; };
 		3927B2E98010CAF74A083D42 /* CoordinatorFactoryImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B311E4A1DC7C7A9C8B64 /* CoordinatorFactoryImp.m */; };
@@ -18,7 +19,7 @@
 		3927B560EF1C5475D74E3CC6 /* AuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B0DB6A757FD66B452864 /* AuthViewController.m */; };
 		3927B5918BC80FD58A4ABA63 /* AuthCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B33F9CD182E9803973C4 /* AuthCoordinator.m */; };
 		3927B75B8221C05A555352A2 /* BaseCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B659A954CA89F6806C29 /* BaseCoordinator.m */; };
-		3927B7AF612090CE1277D720 /* ItemList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BB57AB8F1FA90898087C /* ItemList.m */; };
+		3927B7AF612090CE1277D720 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BB57AB8F1FA90898087C /* Item.m */; };
 		3927B810099BB7E3D657D1FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B5E9588F0294601FEF96 /* AppDelegate.m */; };
 		3927B87E6BCCEB0A880D9614 /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B8242477A85F9CBA28E2 /* ItemsViewController.m */; };
 		3927B8DC1BDE668706ECF960 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3927BD9E115E41F0810613F7 /* Settings.storyboard */; };
@@ -41,7 +42,7 @@
 		3927B01679D51CB939B803E9 /* SettingsDetailControllerOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsDetailControllerOutput.h; sourceTree = "<group>"; };
 		3927B0501CC173A9E94574D4 /* ControllerFactoryImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerFactoryImp.m; sourceTree = "<group>"; };
 		3927B08EDAF818F621282E20 /* SettingsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsDetailViewController.m; sourceTree = "<group>"; };
-		3927B0D6EF94C7629EF43745 /* ItemControllersFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemControllersFactory.h; sourceTree = "<group>"; };
+		3927B0D6EF94C7629EF43745 /* ItemsControllersFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsControllersFactory.h; sourceTree = "<group>"; };
 		3927B0DB6A757FD66B452864 /* AuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthViewController.m; sourceTree = "<group>"; };
 		3927B0E4B057524DCC8C118C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3927B0F4313601B647D30C9D /* ItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetailViewController.m; sourceTree = "<group>"; };
@@ -61,6 +62,8 @@
 		3927B3317D0514C03B6D69C6 /* Coordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coordinator.h; sourceTree = "<group>"; };
 		3927B33F9CD182E9803973C4 /* AuthCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthCoordinator.m; sourceTree = "<group>"; };
 		3927B34AD6748DB96C143F82 /* AuthCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthCoordinator.h; sourceTree = "<group>"; };
+		3927B39656CCCE01A150F3F9 /* ItemCreateControllersFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCreateControllersFactory.h; sourceTree = "<group>"; };
+		3927B4752DE14805032BE1EF /* ItemCreateControllerOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCreateControllerOutput.h; sourceTree = "<group>"; };
 		3927B4DA62939636BF3E42BD /* ItemsCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsCoordinator.m; sourceTree = "<group>"; };
 		3927B521563445BCC797BA1D /* FlowControllerOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowControllerOutput.h; sourceTree = "<group>"; };
 		3927B52253EA281C45ECC425 /* UIViewController+Storyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Storyboard.m"; sourceTree = "<group>"; };
@@ -71,6 +74,7 @@
 		3927B601F69ABF9C8D43174C /* ItemCreateCoordinatorOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCreateCoordinatorOutput.h; sourceTree = "<group>"; };
 		3927B65291D49B48E1463CF9 /* ControllerFactoryImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerFactoryImp.h; sourceTree = "<group>"; };
 		3927B659A954CA89F6806C29 /* BaseCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCoordinator.m; sourceTree = "<group>"; };
+		3927B66F5E639774325A3320 /* ItemCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCreateViewController.h; sourceTree = "<group>"; };
 		3927B6FB4BCBB4801906ADA2 /* ApplicationCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationCoordinator.m; sourceTree = "<group>"; };
 		3927B777CEE3F1467CB59251 /* ItemCreateCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCreateCoordinator.m; sourceTree = "<group>"; };
 		3927B797128CB5507B29B9BE /* Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
@@ -78,12 +82,13 @@
 		3927B7BF33A41FA807CDABD9 /* ItemCreateCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCreateCoordinator.h; sourceTree = "<group>"; };
 		3927B8242477A85F9CBA28E2 /* ItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsViewController.m; sourceTree = "<group>"; };
 		3927B8F5F39735B7919CF359 /* AuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthViewController.h; sourceTree = "<group>"; };
+		3927B904A5FE142186D0B3DB /* ItemCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCreateViewController.m; sourceTree = "<group>"; };
 		3927BA052DDB2B550CFD8DD8 /* CreateCoordinatorBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateCoordinatorBox.m; sourceTree = "<group>"; };
 		3927BA6DB33482164F5BA8C1 /* SettingsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsItem.h; sourceTree = "<group>"; };
 		3927BAC725008B19F2FF7C8D /* FlowControllerInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowControllerInput.h; sourceTree = "<group>"; };
 		3927BB387848BFAFD16BD8EE /* Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Blocks.h; sourceTree = "<group>"; };
 		3927BB4491CB0BE07F804E43 /* RouterImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouterImp.m; sourceTree = "<group>"; };
-		3927BB57AB8F1FA90898087C /* ItemList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemList.m; sourceTree = "<group>"; };
+		3927BB57AB8F1FA90898087C /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		3927BCA4ACC785C1A7136B12 /* SettingsCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsCoordinator.h; sourceTree = "<group>"; };
 		3927BCA773FEEBD9C06E3A6E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3927BD3FCCBB93A5CC84133A /* AuthFlowOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthFlowOutput.h; sourceTree = "<group>"; };
@@ -92,7 +97,7 @@
 		3927BD88BBCEE4EA74D094E9 /* BaseCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCoordinator.h; sourceTree = "<group>"; };
 		3927BD9E115E41F0810613F7 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		3927BDA88B10C3D3CC205B75 /* SettingsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsDetailViewController.h; sourceTree = "<group>"; };
-		3927BDE68BC43C0FA6F5472F /* ItemList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemList.h; sourceTree = "<group>"; };
+		3927BDE68BC43C0FA6F5472F /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		3927BE8377CF465141162828 /* RouterImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouterImp.h; sourceTree = "<group>"; };
 		3927BE89E1E3565A22E1E2C7 /* StoryboardsEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardsEnums.h; sourceTree = "<group>"; };
 		3927BE97D2D485A76ECCD2F0 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
@@ -141,6 +146,14 @@
 				ED5E39A11DF21565005A421B /* Authorization.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3927B1933DF09F9CD02BA141 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3927B4752DE14805032BE1EF /* ItemCreateControllerOutput.h */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		3927B2568085B710ED7BBA4D /* AuthFlow */ = {
@@ -221,8 +234,8 @@
 		3927B8087F6094686E3DFBEB /* ItemList */ = {
 			isa = PBXGroup;
 			children = (
-				3927BDE68BC43C0FA6F5472F /* ItemList.h */,
-				3927BB57AB8F1FA90898087C /* ItemList.m */,
+				3927BDE68BC43C0FA6F5472F /* Item.h */,
+				3927BB57AB8F1FA90898087C /* Item.m */,
 			);
 			path = ItemList;
 			sourceTree = "<group>";
@@ -262,8 +275,9 @@
 			isa = PBXGroup;
 			children = (
 				3927B329B70641F01D245DB5 /* AuthControllersFactory.h */,
-				3927B0D6EF94C7629EF43745 /* ItemControllersFactory.h */,
+				3927B0D6EF94C7629EF43745 /* ItemsControllersFactory.h */,
 				3927B2A1917FB0269F943703 /* SettingsControllerFactory.h */,
+				3927B39656CCCE01A150F3F9 /* ItemCreateControllersFactory.h */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -347,8 +361,19 @@
 				3927B777CEE3F1467CB59251 /* ItemCreateCoordinator.m */,
 				3927B7BF33A41FA807CDABD9 /* ItemCreateCoordinator.h */,
 				3927B601F69ABF9C8D43174C /* ItemCreateCoordinatorOutput.h */,
+				3927BFFF6316BDA48D06484F /* Controllers */,
+				3927B1933DF09F9CD02BA141 /* Protocols */,
 			);
 			path = ItemCreate;
+			sourceTree = "<group>";
+		};
+		3927BFFF6316BDA48D06484F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3927B66F5E639774325A3320 /* ItemCreateViewController.h */,
+				3927B904A5FE142186D0B3DB /* ItemCreateViewController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		ED20E9D01DE9CB7E004911B2 = {
@@ -571,8 +596,9 @@
 				3927B007BB7FA4B9226F186C /* ItemDetailViewController.m in Sources */,
 				3927B423A91E1105C5E4B506 /* ItemCreateCoordinator.m in Sources */,
 				3927BD6A029D49236F0FCFED /* CreateCoordinatorBox.m in Sources */,
-				3927B7AF612090CE1277D720 /* ItemList.m in Sources */,
+				3927B7AF612090CE1277D720 /* Item.m in Sources */,
 				3927B0334845C88600AEBDC1 /* SettingsItem.m in Sources */,
+				3927B16C337A46C7388AD268 /* ItemCreateViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

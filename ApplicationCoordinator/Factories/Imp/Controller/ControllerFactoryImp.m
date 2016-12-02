@@ -10,6 +10,7 @@
 #import "SettingsControllerOutput.h"
 #import "SettingsViewController.h"
 #import "SettingsDetailViewController.h"
+#import "ItemCreateViewController.h"
 
 
 @implementation ControllerFactoryImp
@@ -36,6 +37,10 @@
 - (id <SettingsDetailControllerOutput>)createSettingsDetailOutput {
     id <SettingsDetailControllerOutput> output = [SettingsDetailViewController controllerFromStoryboard:StoryboardEnumSettings];
     return output;
+}
+
+- (id <ItemCreateControllerOutput>)createItemCreateOutput {
+    return [ItemCreateViewController controllerFromStoryboard:StoryboardEnumItemCreate];
 }
 
 

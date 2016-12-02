@@ -7,7 +7,7 @@
 
 @protocol ItemsControllerOutput;
 
-@protocol ItemControllersFactory <NSObject>
+@protocol ItemsControllersFactory <NSObject>
 
 @required
 - (id <ItemsControllerOutput>)createList;

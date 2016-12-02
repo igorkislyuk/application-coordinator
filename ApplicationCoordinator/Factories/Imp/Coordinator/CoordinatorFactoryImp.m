@@ -10,13 +10,13 @@
 #import "AuthCoordinator.h"
 #import "AuthControllersFactory.h"
 #import "SettingsCoordinator.h"
+#import "CreateCoordinatorBox.h"
+#import "ItemCreateCoordinator.h"
 
 
-@implementation CoordinatorFactoryImp {
+@implementation CoordinatorFactoryImp
 
-}
-
-- (BaseCoordinator *)createItemCoordinatorWith:(UINavigationController *)navigationController {
+- (id <Coordinator>)createItemCoordinatorWith:(UINavigationController *)navigationController {
     
     CoordinatorFactoryImp *coordinatorFactoryImp = [[CoordinatorFactoryImp alloc] init];
     ControllerFactoryImp *controllerFactoryImp = [[ControllerFactoryImp alloc] init];
@@ -28,7 +28,7 @@
     return coordinator;
 }
 
-- (BaseCoordinator *)createItemCoordinator {
+- (id <Coordinator>)createItemCoordinator {
     return [self createItemCoordinatorWith:nil];
 }
 
@@ -57,6 +57,22 @@
 
     return [self createSettingCoordinatorWith:nil];
 }
+
+- (CreateCoordinatorBox *)createItemCreateCoordinatorBoxWith:(UINavigationController *)navigationController {
+    CreateCoordinatorBox *coordinatorBox = [[CreateCoordinatorBox alloc] init];
+
+    RouterImp *routerImp = [[RouterImp alloc] initWithNavigationController:[self navigationControllerFrom:navigationController]];
+
+    id <Coordinator, ItemCreateCoordinatorOutput> coordinator = [[ItemCreateCoordinator alloc] ini]
+
+
+    return coordinatorBox;
+}
+
+- (CreateCoordinatorBox *)createItemCreateCoordinatorBox {
+    return [self createItemCreateCoordinatorBoxWith:nil];
+}
+
 
 #pragma mark - Private
 

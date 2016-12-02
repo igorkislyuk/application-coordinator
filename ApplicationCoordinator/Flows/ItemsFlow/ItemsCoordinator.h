@@ -5,10 +5,10 @@
 
 #import "BaseCoordinator.h"
 
-@protocol CoordinatorFactory, Router, ItemControllersFactory;
+@protocol CoordinatorFactory, Router, ItemsControllersFactory;
 
 @interface ItemsCoordinator : BaseCoordinator
 
-- (instancetype)initWithCoordinatorFactory:(id <CoordinatorFactory>)coordinatorFactory router:(id <Router>)router controllerFactory:(id <ItemControllersFactory>)factory;
+- (instancetype)initWithCoordinatorFactory:(id <CoordinatorFactory>)coordinatorFactory router:(id <Router>)router controllerFactory:(id <ItemsControllersFactory>)factory;
 
 @end

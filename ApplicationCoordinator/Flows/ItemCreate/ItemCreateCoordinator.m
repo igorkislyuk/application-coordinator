@@ -5,8 +5,12 @@
 
 #import "ItemCreateCoordinator.h"
 
+@interface ItemCreateCoordinator ()
 
-@implementation ItemCreateCoordinator {
+@property (nonatomic, strong) id <Router> router;
+@property (nonatomic, strong) id <ItemC>
 
-}
+@end
+
+@implementation ItemCreateCoordinator
 @end

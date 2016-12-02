@@ -3,13 +3,15 @@
 // Copyright (c) 2016 Igor Kislyuk. All rights reserved.
 //
 
-#import "ItemControllersFactory.h"
+#import "ItemsControllersFactory.h"
 #import "AuthControllersFactory.h"
 #import "SettingsControllerFactory.h"
+#import "ItemCreateControllersFactory.h"
 
 @interface ControllerFactoryImp : NSObject <
-        ItemControllersFactory,
+        ItemsControllersFactory,
         AuthControllersFactory,
-        SettingsControllerFactory>
+        SettingsControllerFactory,
+        ItemCreateControllersFactory>
 
 @end
