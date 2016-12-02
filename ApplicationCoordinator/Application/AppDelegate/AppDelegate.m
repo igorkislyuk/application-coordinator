@@ -28,17 +28,6 @@
     [self createApplicationCoordinator];
     
     [_applicationCoordinator start];
-
-//    TabbarViewController *tabbarViewController = (TabbarViewController *)_applicationCoordinator.tabbar;
-//
-//    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-//    [window addSubview:tabbarViewController.view];
-//    [window setRootViewController:tabbarViewController];
-//    
-//    
-//
-//    [window makeKeyAndVisible];
-//    self.window = window;
     
     return YES;
 }
@@ -47,9 +36,6 @@
     if (_applicationCoordinator == nil) {
     
         CoordinatorFactoryImp *coordinatorFactoryImp = [[CoordinatorFactoryImp alloc] init];
-        
-        //create application coordinator
-//        _applicationCoordinator = [[ApplicationCoordinator alloc] initWithCoordinatorFactory:coordinatorFactoryImp];
         
         _applicationCoordinator = [[ApplicationCoordinator alloc] initWithTabbar:(id <TabbarFlowOutput>)self.window.rootViewController coordinatorFactory:coordinatorFactoryImp];
 

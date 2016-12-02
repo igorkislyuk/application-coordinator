@@ -28,37 +28,6 @@
     return self;
 }
 
-- (instancetype)initWithCoordinatorFactory:(id <CoordinatorFactory>)coordinatorFactory {
-    self = [super init];
-    
-    if (self) {
-
-        _tabbar = [self createRootController];
-        _coordinatorFactory = coordinatorFactory;
-
-    }
-
-    return self;
-}
-
-- (id <TabbarFlowOutput>)createRootController {
-
-    //create controller
-    TabbarViewController *tabbarViewController = [[TabbarViewController alloc] initWithNibName:nil bundle:nil];
-
-    //load controllers
-    UINavigationController *items = [[UINavigationController alloc] initWithNavigationBarClass:nil toolbarClass:nil];
-
-    UINavigationController *settings = [[UINavigationController alloc] initWithNavigationBarClass:nil toolbarClass:nil];
-
-    items.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Items" image:nil tag:0];
-    settings.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Settings" image:nil tag:1];
-
-    tabbarViewController.viewControllers = @[items, settings];
-
-    return tabbarViewController;
-}
-
 - (void)start {
     
     NavigationBlock settingsRun = ^(UINavigationController *navigationController) {
@@ -79,6 +48,15 @@
             [itemCoordinator start];
 
             [self addDependency:itemCoordinator];
+        }
+    };
+}
+
+- (NavigationBlock)blockForSettings {
+    return ^(UINavigationController *navigationController) {
+        //means we run this block only once
+        if (navigationController.viewControllers.count == 0) {
+            
         }
     };
 }

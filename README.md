@@ -12,6 +12,12 @@ https://github.com/AndreyPanov/ApplicationCoordinator
 1. Download current latest version from 'master' branch
 2. Learn the structure of sample project. Try to create something for you, using this simple algorithm
 
+## TLDR
+
+Here is short ideas that you should keep in mind, to create beautiful project.
+
+- You should have at least one coordinator.
+
 
 ## Guidelines for creating ApplicationCoordinator
 

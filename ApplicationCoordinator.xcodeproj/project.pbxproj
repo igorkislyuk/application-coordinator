@@ -24,7 +24,7 @@
 		ED20EA021DE9E035004911B2 /* TabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED20EA011DE9E035004911B2 /* TabbarViewController.m */; };
 		ED20EA061DEC09CC004911B2 /* SimpleListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED20EA051DEC09CC004911B2 /* SimpleListViewController.xib */; };
 		ED20EA0A1DEC2385004911B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED20EA091DEC2385004911B2 /* Main.storyboard */; };
-		ED5E39991DEF76FC005A421B /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED5E39981DEF76FC005A421B /* AuthViewController.xib */; };
+		ED5E399C1DF20280005A421B /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5E399B1DF20280005A421B /* Settings.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,7 +73,7 @@
 		ED20EA041DE9E07E004911B2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		ED20EA051DEC09CC004911B2 /* SimpleListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleListViewController.xib; sourceTree = "<group>"; };
 		ED20EA091DEC2385004911B2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		ED5E39981DEF76FC005A421B /* AuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
+		ED5E399B1DF20280005A421B /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +139,6 @@
 			children = (
 				3927B8F5F39735B7919CF359 /* AuthViewController.h */,
 				3927B0DB6A757FD66B452864 /* AuthViewController.m */,
-				ED5E39981DEF76FC005A421B /* AuthViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -223,7 +222,7 @@
 				ED20E9F31DE9CBC9004911B2 /* Application */,
 				3927BFEBB43BFE80DA18BD8C /* Factories */,
 				ED20E9FB1DE9DEE7004911B2 /* Flows */,
-				ED20E9FF1DE9DFF0004911B2 /* InitialInterface */,
+				ED20E9FF1DE9DFF0004911B2 /* Interface */,
 				ED20E9F41DE9CE50004911B2 /* Main protocols */,
 				ED20E9F61DE9D00D004911B2 /* Parents */,
 				ED20E9FA1DE9DE8E004911B2 /* Resources */,
@@ -248,6 +247,7 @@
 		ED20E9F31DE9CBC9004911B2 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				ED20EA031DE9E037004911B2 /* Tabbar */,
 				3927B00478CF5E6E075EF63D /* AppDelegate */,
 				ED20E9FE1DE9DF40004911B2 /* ApplicationCoordinator */,
 				3927B1693B49D5C962C115C7 /* TabbarFlowOutput.h */,
@@ -320,13 +320,12 @@
 			path = ApplicationCoordinator;
 			sourceTree = "<group>";
 		};
-		ED20E9FF1DE9DFF0004911B2 /* InitialInterface */ = {
+		ED20E9FF1DE9DFF0004911B2 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				ED20EA031DE9E037004911B2 /* Tabbar */,
-				ED20E9EA1DE9CB7E004911B2 /* LaunchScreen.storyboard */,
-				ED20EA091DEC2385004911B2 /* Main.storyboard */,
+				ED5E399A1DF200D0005A421B /* Storyboards */,
 			);
+			name = Interface;
 			path = InitialInterface;
 			sourceTree = "<group>";
 		};
@@ -336,7 +335,18 @@
 				ED20EA001DE9E035004911B2 /* TabbarViewController.h */,
 				ED20EA011DE9E035004911B2 /* TabbarViewController.m */,
 			);
-			path = Tabbar;
+			name = Tabbar;
+			path = ../InitialInterface/Tabbar;
+			sourceTree = "<group>";
+		};
+		ED5E399A1DF200D0005A421B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ED20E9EA1DE9CB7E004911B2 /* LaunchScreen.storyboard */,
+				ED20EA091DEC2385004911B2 /* Main.storyboard */,
+				ED5E399B1DF20280005A421B /* Settings.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,7 +411,7 @@
 			files = (
 				ED20E9EC1DE9CB7E004911B2 /* LaunchScreen.storyboard in Resources */,
 				ED20EA061DEC09CC004911B2 /* SimpleListViewController.xib in Resources */,
-				ED5E39991DEF76FC005A421B /* AuthViewController.xib in Resources */,
+				ED5E399C1DF20280005A421B /* Settings.storyboard in Resources */,
 				ED20E9E91DE9CB7E004911B2 /* Assets.xcassets in Resources */,
 				ED20EA0A1DEC2385004911B2 /* Main.storyboard in Resources */,
 			);
