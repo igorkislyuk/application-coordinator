@@ -13,11 +13,13 @@
 #import <UIKit/UIKit.h>
 
 #import "Blocks.h"
-
 #import "BlockTypes.h"
 
 #import "Router.h"
+
 #import "FlowControllerOutput.h"
 #import "FlowControllerInput.h"
+
+#import "BaseCoordinator.h"
 
 #endif /* PrefixHeader_pch */

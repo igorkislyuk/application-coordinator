@@ -24,19 +24,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>3927B036484EA0FB89AAA7D2</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AuthControllersFactory.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>3927B0501CC173A9E94574D4</key>
 		<dict>
 			<key>fileEncoding</key>
@@ -50,16 +37,31 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>3927B0D163904E455A243F7E</key>
+		<key>3927B0C37A53AE28F58B60FC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3927BA163855BBC337269049</string>
+				<string>3927B13157A342D19C7F318F</string>
+				<string>3927BD9E115E41F0810613F7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Storyboards</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3927B0D6EF94C7629EF43745</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>RouterImp.m</string>
+			<string>ItemControllersFactory.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -76,12 +78,49 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>3927B0E4B057524DCC8C118C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>3927B102E3E6C351BFDFCD77</key>
 		<dict>
 			<key>fileRef</key>
 			<string>3927B4DA62939636BF3E42BD</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>3927B13157A342D19C7F318F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>path</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3927B156F6C7DE955BEEF876</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CoordinatorFactory.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>3927B1693B49D5C962C115C7</key>
 		<dict>
@@ -95,6 +134,13 @@
 			<string>TabbarFlowOutput.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3927B1B65090815C02749DE5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3927BB4491CB0BE07F804E43</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>3927B1D89B5B1CCEB8234151</key>
 		<dict>
@@ -136,6 +182,26 @@
 			<string>PBXGroup</string>
 			<key>path</key>
 			<string>AuthFlow</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3927B2676206AFD82175E23A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3927BD5029988429004642F9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3927B2A1917FB0269F943703</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SettingsControllerFactory.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -198,6 +264,32 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>3927B329B70641F01D245DB5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AuthControllersFactory.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3927B3317D0514C03B6D69C6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Coordinator.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>3927B33F9CD182E9803973C4</key>
 		<dict>
 			<key>fileEncoding</key>
@@ -224,19 +316,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>3927B35321D77D6727D7A0B2</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FlowControllerOutput.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>3927B4DA62939636BF3E42BD</key>
 		<dict>
 			<key>fileEncoding</key>
@@ -250,6 +329,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>3927B521563445BCC797BA1D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FlowControllerOutput.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>3927B536F4E8AB077E94AE18</key>
 		<dict>
 			<key>children</key>
@@ -260,7 +352,7 @@
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>path</key>
-			<string>Classes</string>
+			<string>DTO</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -343,6 +435,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>3927B659A954CA89F6806C29</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BaseCoordinator.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>3927B697A87D1E123A66E86D</key>
 		<dict>
 			<key>children</key>
@@ -384,20 +489,14 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>3927B74CCA243B8D51E576F8</key>
+		<key>3927B75B8221C05A555352A2</key>
 		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
+			<key>fileRef</key>
+			<string>3927B659A954CA89F6806C29</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CoordinatorFactory.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
 		</dict>
-		<key>3927B804265C5F928CCAD53A</key>
+		<key>3927B797128CB5507B29B9BE</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -406,7 +505,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>ItemControllersFactory.h</string>
+			<string>Router.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -434,6 +533,29 @@
 		<dict>
 			<key>fileRef</key>
 			<string>3927B8242477A85F9CBA28E2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3927B8C263891B4BC8C03BA1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3927B3317D0514C03B6D69C6</string>
+				<string>3927BAC725008B19F2FF7C8D</string>
+				<string>3927B521563445BCC797BA1D</string>
+				<string>3927B797128CB5507B29B9BE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Protocols</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3927B8DC1BDE668706ECF960</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3927BD9E115E41F0810613F7</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -492,18 +614,60 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>3927BA2E89E37E545779CEA3</key>
+		<key>3927B9844DE45C4F474E6A11</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3927BA163855BBC337269049</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3927BA163855BBC337269049</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>3927BBE66AE60C4C0E09BD40</string>
-				<string>3927BE0C5956B2C0E68EB995</string>
-				<string>3927B0D163904E455A243F7E</string>
+				<string>3927B0E4B057524DCC8C118C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>path</key>
+			<string>.</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3927BA3FA759E75DD1B41086</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3927B13157A342D19C7F318F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3927BA6DB076B9BC831C6415</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3927B329B70641F01D245DB5</string>
+				<string>3927B0D6EF94C7629EF43745</string>
+				<string>3927B2A1917FB0269F943703</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>path</key>
-			<string>Router</string>
+			<string>Controllers</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3927BAC725008B19F2FF7C8D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FlowControllerInput.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -517,6 +681,19 @@
 			<string>sourcecode.c.h</string>
 			<key>path</key>
 			<string>Blocks.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3927BB4491CB0BE07F804E43</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RouterImp.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -534,7 +711,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>3927BBE66AE60C4C0E09BD40</key>
+		<key>3927BCA4ACC785C1A7136B12</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -543,7 +720,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>Router.h</string>
+			<string>SettingsCoordinator.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -557,6 +734,20 @@
 			<string>sourcecode.c.h</string>
 			<key>path</key>
 			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3927BCFB3A50B86C66DB7875</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3927BE8377CF465141162828</string>
+				<string>3927BB4491CB0BE07F804E43</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Router</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -580,6 +771,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>3927BD5029988429004642F9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SettingsCoordinator.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>3927BD67FE050B99682BA9E8</key>
 		<dict>
 			<key>fileRef</key>
@@ -587,7 +791,7 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>3927BE016A7331130C6688BB</key>
+		<key>3927BD88BBCEE4EA74D094E9</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -596,20 +800,32 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>FlowControllerInput.h</string>
+			<string>BaseCoordinator.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>3927BE0C5956B2C0E68EB995</key>
+		<key>3927BD9E115E41F0810613F7</key>
 		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>file.storyboard</string>
 			<key>path</key>
-			<string>RouterImp.h</string>
+			<string>Settings.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3927BDE42F52EDF0BF574BD7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3927BA6DB076B9BC831C6415</string>
+				<string>3927B156F6C7DE955BEEF876</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Protocols</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -623,6 +839,33 @@
 			<string>PBXGroup</string>
 			<key>path</key>
 			<string>Protocols</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3927BE8377CF465141162828</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RouterImp.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3927BEA4B9C8D29CE8F150D6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3927BD88BBCEE4EA74D094E9</string>
+				<string>3927B659A954CA89F6806C29</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>BaseCoordinator</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -646,21 +889,12 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>3927BFDC618057B833D585BB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3927B0D163904E455A243F7E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
 		<key>3927BFEBB43BFE80DA18BD8C</key>
 		<dict>
 			<key>children</key>
 			<array>
 				<string>3927BB7EAE78E335B8AF6659</string>
-				<string>3927B036484EA0FB89AAA7D2</string>
-				<string>3927B74CCA243B8D51E576F8</string>
-				<string>3927B804265C5F928CCAD53A</string>
+				<string>3927BDE42F52EDF0BF574BD7</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -756,17 +990,18 @@
 			<array>
 				<string>ED20EA021DE9E035004911B2</string>
 				<string>ED20E9DE1DE9CB7E004911B2</string>
-				<string>ED20E9F91DE9D01F004911B2</string>
 				<string>3927BD67FE050B99682BA9E8</string>
 				<string>3927B102E3E6C351BFDFCD77</string>
 				<string>3927B810099BB7E3D657D1FF</string>
-				<string>3927BFDC618057B833D585BB</string>
 				<string>3927B2E98010CAF74A083D42</string>
 				<string>3927BD093DBBFFFC81BCCFF3</string>
 				<string>3927B87E6BCCEB0A880D9614</string>
 				<string>3927BF00D6BB14A685AF81BA</string>
 				<string>3927B5918BC80FD58A4ABA63</string>
 				<string>3927B560EF1C5475D74E3CC6</string>
+				<string>3927B75B8221C05A555352A2</string>
+				<string>3927B1B65090815C02749DE5</string>
+				<string>3927B2676206AFD82175E23A</string>
 			</array>
 			<key>isa</key>
 			<string>PBXSourcesBuildPhase</string>
@@ -790,11 +1025,11 @@
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>ED20E9EC1DE9CB7E004911B2</string>
 				<string>ED20EA061DEC09CC004911B2</string>
-				<string>ED5E399C1DF20280005A421B</string>
 				<string>ED20E9E91DE9CB7E004911B2</string>
-				<string>ED20EA0A1DEC2385004911B2</string>
+				<string>3927B9844DE45C4F474E6A11</string>
+				<string>3927BA3FA759E75DD1B41086</string>
+				<string>3927B8DC1BDE668706ECF960</string>
 			</array>
 			<key>isa</key>
 			<string>PBXResourcesBuildPhase</string>
@@ -857,14 +1092,12 @@
 			<key>children</key>
 			<array>
 				<string>ED20E9F31DE9CBC9004911B2</string>
+				<string>ED20E9F41DE9CE50004911B2</string>
 				<string>3927B536F4E8AB077E94AE18</string>
 				<string>3927BFEBB43BFE80DA18BD8C</string>
 				<string>ED20E9FB1DE9DEE7004911B2</string>
-				<string>ED20E9FF1DE9DFF0004911B2</string>
-				<string>ED20E9F41DE9CE50004911B2</string>
-				<string>ED20E9F61DE9D00D004911B2</string>
 				<string>ED20E9FA1DE9DE8E004911B2</string>
-				<string>3927BA2E89E37E545779CEA3</string>
+				<string>3927B0C37A53AE28F58B60FC</string>
 				<string>ED20E9DC1DE9CB7E004911B2</string>
 			</array>
 			<key>isa</key>
@@ -923,41 +1156,6 @@
 		<dict>
 			<key>fileRef</key>
 			<string>ED20E9E81DE9CB7E004911B2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ED20E9EA1DE9CB7E004911B2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>ED20E9EB1DE9CB7E004911B2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>path</key>
-			<string>.</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED20E9EB1DE9CB7E004911B2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED20E9EC1DE9CB7E004911B2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ED20E9EA1DE9CB7E004911B2</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -1235,76 +1433,16 @@
 		<dict>
 			<key>children</key>
 			<array>
-				<string>ED20E9F51DE9CEA1004911B2</string>
-				<string>3927BE016A7331130C6688BB</string>
-				<string>3927B35321D77D6727D7A0B2</string>
+				<string>3927BEA4B9C8D29CE8F150D6</string>
+				<string>3927B8C263891B4BC8C03BA1</string>
+				<string>3927BCFB3A50B86C66DB7875</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>path</key>
-			<string>Main protocols</string>
+			<string>Core</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED20E9F51DE9CEA1004911B2</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Coordinator.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED20E9F61DE9D00D004911B2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>ED20E9F71DE9D01F004911B2</string>
-				<string>ED20E9F81DE9D01F004911B2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Parents</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED20E9F71DE9D01F004911B2</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BaseCoordinator.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED20E9F81DE9D01F004911B2</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BaseCoordinator.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED20E9F91DE9D01F004911B2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ED20E9F81DE9D01F004911B2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>ED20E9FA1DE9DE8E004911B2</key>
 		<dict>
@@ -1338,7 +1476,10 @@
 		<key>ED20E9FC1DE9DEEF004911B2</key>
 		<dict>
 			<key>children</key>
-			<array/>
+			<array>
+				<string>3927BCA4ACC785C1A7136B12</string>
+				<string>3927BD5029988429004642F9</string>
+			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>path</key>
@@ -1373,21 +1514,6 @@
 			<string>PBXGroup</string>
 			<key>path</key>
 			<string>ApplicationCoordinator</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED20E9FF1DE9DFF0004911B2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>ED5E399A1DF200D0005A421B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Interface</string>
-			<key>path</key>
-			<string>Interface</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1468,63 +1594,6 @@
 		<dict>
 			<key>fileRef</key>
 			<string>ED20EA051DEC09CC004911B2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ED20EA091DEC2385004911B2</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>path</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED20EA0A1DEC2385004911B2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ED20EA091DEC2385004911B2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ED5E399A1DF200D0005A421B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>ED20E9EA1DE9CB7E004911B2</string>
-				<string>ED20EA091DEC2385004911B2</string>
-				<string>ED5E399B1DF20280005A421B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Storyboards</string>
-			<key>path</key>
-			<string>Storyboards</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED5E399B1DF20280005A421B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>path</key>
-			<string>Settings.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED5E399C1DF20280005A421B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ED5E399B1DF20280005A421B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
