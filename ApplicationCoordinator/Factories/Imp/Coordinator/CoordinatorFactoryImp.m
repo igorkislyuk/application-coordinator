@@ -4,7 +4,7 @@
 //
 
 #import "CoordinatorFactoryImp.h"
-#import "ItemCoordinator.h"
+#import "ItemsCoordinator.h"
 #import "ControllerFactoryImp.h"
 #import "RouterImp.h"
 #import "AuthCoordinator.h"
@@ -21,7 +21,7 @@
     CoordinatorFactoryImp *coordinatorFactoryImp = [[CoordinatorFactoryImp alloc] init];
     ControllerFactoryImp *controllerFactoryImp = [[ControllerFactoryImp alloc] init];
     RouterImp *routerImp = [[RouterImp alloc] initWithNavigationController:navigationController];
-    BaseCoordinator *coordinator = [[ItemCoordinator alloc] initWithCoordinatorFactory:coordinatorFactoryImp
+    BaseCoordinator *coordinator = [[ItemsCoordinator alloc] initWithCoordinatorFactory:coordinatorFactoryImp
                                                                                 router:routerImp
                                                                      controllerFactory:controllerFactoryImp];
 

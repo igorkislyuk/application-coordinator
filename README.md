@@ -48,7 +48,7 @@ Create 2 protocols for each view controller, like `FlowControllerInput` & `FlowC
 
 Than you should deal with the factory for controllers. Normally , you should create protocol for each factory implementation and depends on it. Keeping things simple, we adopt one factory implementation for all factory controllers protocols.
 
-Than you should create output for each controller in the flow. E.g. `ItemListOutput` for `ItemListViewController`
+Than you should create output for each controller in the flow. E.g. `ItemsControllerOutput` for `ItemListViewController`
 
 After that you can freely initialiaze application coordinator from AppDelegate. Prefer using lazy initialization.
 

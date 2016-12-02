@@ -12,6 +12,9 @@
 typedef NS_ENUM(NSUInteger, StoryboardEnum) {
     StoryboardEnumMain = 0,
     StoryboardEnumSettings,
+    StoryboardEnumItems,
+    StoryboardEnumItemCreate,
+    StoryboardEnumAuthorization
 };
 
 #endif /* StoryboardsEnums_h */

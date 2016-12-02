@@ -3,14 +3,14 @@
 // Copyright (c) 2016 Igor Kislyuk. All rights reserved.
 //
 
-#import "ItemCoordinator.h"
+#import "ItemsCoordinator.h"
 #import "CoordinatorFactory.h"
 #import "Router.h"
-#import "ItemListOutput.h"
+#import "ItemsControllerOutput.h"
 #import "AuthFlowOutput.h"
 #import "ItemControllersFactory.h"
 
-@interface ItemCoordinator ()
+@interface ItemsCoordinator ()
 
 @property (nonatomic, strong) id <CoordinatorFactory> coordinatorFactory;
 @property (nonatomic, strong) id <Router> router;
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation ItemCoordinator {
+@implementation ItemsCoordinator {
 
 }
 
@@ -39,15 +39,28 @@
 
 - (void)showList {
 
-    id <ItemListOutput> output = [self.factory createList];
+    id <ItemsControllerOutput> output = [self.factory createList];
 
     BlockWeakSelf weakSelf = self;
-    output.authNeeded = ^{
-        BlockStrongSelf strongSelf = weakSelf;
-        BlockCheckStrongSelf(strongSelf);
+//    output.authNeeded = ^{
+//        BlockStrongSelf strongSelf = weakSelf;
+//        BlockCheckStrongSelf(strongSelf);
+//
+//        [strongSelf runAuthCoordinator];
+//    };
 
-        [strongSelf runAuthCoordinator];
+    output.onSelection = ^(ItemList *itemList){
+
     };
+
+    output.onCreate = ^{
+        BlockStrongSelf strong = weakSelf;
+        BlockCheckStrongSelf(strong);
+
+        [strong runCreateCoordinator];
+
+    };
+
     
     [self.router setRootController:[output toPresent]];
 
@@ -71,5 +84,12 @@
     [authCoord start];
 
 }
+
+- (void)runCreateCoordinator {
+
+
+
+}
+
 
 @end

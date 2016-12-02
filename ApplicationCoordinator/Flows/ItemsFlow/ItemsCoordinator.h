@@ -7,7 +7,7 @@
 
 @protocol CoordinatorFactory, Router, ItemControllersFactory;
 
-@interface ItemCoordinator : BaseCoordinator
+@interface ItemsCoordinator : BaseCoordinator
 
 - (instancetype)initWithCoordinatorFactory:(id <CoordinatorFactory>)coordinatorFactory router:(id <Router>)router controllerFactory:(id <ItemControllersFactory>)factory;
 

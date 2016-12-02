@@ -5,11 +5,11 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol ItemListOutput;
+@protocol ItemsControllerOutput;
 
 @protocol ItemControllersFactory <NSObject>
 
 @required
-- (id <ItemListOutput>)createList;
+- (id <ItemsControllerOutput>)createList;
 
 @end

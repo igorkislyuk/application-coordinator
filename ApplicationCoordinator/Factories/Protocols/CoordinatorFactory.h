@@ -7,6 +7,7 @@
 
 @protocol Coordinator, AuthFlowOutput;
 @class BaseCoordinator;
+@protocol ItemCreateCoordinatorOutput;
 
 @protocol CoordinatorFactory <NSObject>
 
@@ -21,5 +22,8 @@
 @required
 - (id <Coordinator>)createSettingCoordinatorWith:(UINavigationController *)navigationController;
 - (id <Coordinator>)createSettingsCoordinator;
+
+@required
+- (id <Coordinator, ItemCreateCoordinatorOutput>)create;
 
 @end

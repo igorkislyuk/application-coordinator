@@ -4,9 +4,9 @@
 //
 
 #import "ControllerFactoryImp.h"
-#import "SimpleListViewController.h"
+#import "ItemsViewController.h"
 #import "AuthViewController.h"
-#import "ItemListOutput.h"
+#import "ItemsControllerOutput.h"
 #import "SettingsControllerOutput.h"
 #import "SettingsViewController.h"
 #import "SettingsDetailViewController.h"
@@ -14,9 +14,9 @@
 
 @implementation ControllerFactoryImp
 
-- (id <ItemListOutput>)createList {
+- (id <ItemsControllerOutput>)createList {
 
-    id <ItemListOutput> output = [[SimpleListViewController alloc] initWithNibName:NSStringFromClass([SimpleListViewController class]) bundle:nil];
+    id <ItemsControllerOutput> output = [ItemsViewController controllerFromStoryboard:StoryboardEnumItems];
 
     return output;
 }

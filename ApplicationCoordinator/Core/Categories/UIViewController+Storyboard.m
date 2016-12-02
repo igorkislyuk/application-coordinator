@@ -10,15 +10,23 @@
 }
 
 + (__kindof UIViewController *)controllerFromStoryboard:(StoryboardEnum)storyboard {
-    NSString *storyboardName = @"Main";
+    NSString *storyboardName = nil;
     switch (storyboard) {
 
         case StoryboardEnumMain:
-            storyboardName = @"Main";
-            break;
+            storyboardName = @"Main"; break;
         case StoryboardEnumSettings:
-            storyboardName = @"Settings";
-            break;
+            storyboardName = @"Settings"; break;
+        case StoryboardEnumItems:
+            storyboardName = @"Items"; break;
+        case StoryboardEnumItemCreate:
+            storyboardName = @"ItemCreate"; break;
+        case StoryboardEnumAuthorization:
+            storyboardName = @"Authorization"; break;
+        default:
+            NSLog(@"Not handled this situation");
+            abort();
+
     }
 
     return [self instantiateControllerFromStoryboard:[UIStoryboard storyboardWithName:storyboardName bundle:nil] identifier:NSStringFromClass([self class])];

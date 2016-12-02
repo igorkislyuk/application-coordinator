@@ -5,7 +5,7 @@
 
 #import "RouterImp.h"
 
-#import "SimpleListViewController.h"
+#import "ItemsViewController.h"
 
 @implementation RouterImp {
     UINavigationController *_navigationController;

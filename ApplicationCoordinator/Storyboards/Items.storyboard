@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Items View Controller-->
+        <scene sceneID="wY6-F2-fMq">
+            <objects>
+                <viewController id="FQy-d4-lpB" customClass="ItemsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wUk-Xk-RaV"/>
+                        <viewControllerLayoutGuide type="bottom" id="OB7-kK-iXk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WdD-EN-7w3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6GS-lk-dT4">
+                                <rect key="frame" x="165.5" y="318.5" width="44" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btm-8X-xUM">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="30"/>
+                                        <state key="normal" title="Select"/>
+                                        <connections>
+                                            <action selector="actionSelect:" destination="FQy-d4-lpB" eventType="touchUpInside" id="La7-4m-qZV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6GS-lk-dT4" firstAttribute="centerY" secondItem="WdD-EN-7w3" secondAttribute="centerY" id="gRe-rK-ivM"/>
+                            <constraint firstItem="6GS-lk-dT4" firstAttribute="centerX" secondItem="WdD-EN-7w3" secondAttribute="centerX" id="rbC-4u-pMo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dBn-5v-Hyr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55" y="81"/>
+        </scene>
+        <!--Item Detail View Controller-->
+        <scene sceneID="Yp7-KU-0t4">
+            <objects>
+                <viewController id="vJf-gg-BT2" customClass="ItemDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="U78-VO-xb9"/>
+                        <viewControllerLayoutGuide type="bottom" id="NaO-d1-B54"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uSc-ng-DKO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ztU-0D-nD1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="970" y="81"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,14 +1,14 @@
 //
-//  SimpleListViewController.h
+//  ItemsViewController.h
 //  ApplicationCoordinator
 //
 //  Created by Igor on 28/11/16.
 //  Copyright (c) 2016 Igor Kislyuk. All rights reserved.
 //
 
-#import "ItemListOutput.h"
+#import "ItemsControllerOutput.h"
 
-@interface SimpleListViewController : UIViewController <ItemListOutput>
+@interface ItemsViewController : UIViewController <ItemsControllerOutput>
 
 @property(nonatomic, copy) EmptyBlock authNeeded;
 @property(nonatomic, copy) EmptyBlock onCreate;

@@ -7,6 +7,7 @@
 //
 
 #import "BaseCoordinator.h"
+#import "ItemCreateCoordinatorOutput.h"
 
 @interface BaseCoordinator ()
 

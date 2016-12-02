@@ -9,7 +9,7 @@
 @class ItemList;
 typedef void(^ListSelection)(ItemList *itemList);
 
-@protocol ItemListOutput <FlowControllerOutput>
+@protocol ItemsControllerOutput <FlowControllerOutput>
 
 @property(nonatomic, copy) EmptyBlock authNeeded;
 @property(nonatomic, copy) EmptyBlock onCreate;

@@ -7,7 +7,7 @@
 
 #import "TabbarFlowOutput.h"
 #import "CoordinatorFactory.h"
-#import "ItemCoordinator.h"
+#import "ItemsCoordinator.h"
 #import "SettingsCoordinator.h"
 
 @interface ApplicationCoordinator ()
@@ -39,7 +39,7 @@
 
     return ^(UINavigationController *navigationController) {
         if (navigationController.viewControllers.count == 0) {
-            ItemCoordinator *itemCoordinator = (ItemCoordinator *) [self.coordinatorFactory createItemCoordinatorWith:navigationController];
+            ItemsCoordinator *itemCoordinator = (ItemsCoordinator *) [self.coordinatorFactory createItemCoordinatorWith:navigationController];
             
             [itemCoordinator start];
             [self addDependency:itemCoordinator];
