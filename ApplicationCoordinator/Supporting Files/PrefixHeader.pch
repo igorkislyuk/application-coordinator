@@ -22,4 +22,7 @@
 
 #import "BaseCoordinator.h"
 
+#import "StoryboardsEnums.h"
+#import "UIViewController+Storyboard.h"
+
 #endif /* PrefixHeader_pch */

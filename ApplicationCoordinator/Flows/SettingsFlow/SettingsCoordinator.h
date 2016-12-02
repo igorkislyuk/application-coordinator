@@ -9,4 +9,9 @@
 
 @property (nonatomic, strong) id <SettingsControllerFactory> factory;
 
+@property (nonatomic, strong) id <Router> router;
+
+- (instancetype)initWithFactory:(id <SettingsControllerFactory>)factory router:(id <Router>)router;
+
+
 @end

@@ -18,4 +18,8 @@
 - (id <AuthFlowOutput, Coordinator>)createAuthCoordinatorWith:(UINavigationController *)navigationController;
 - (id <AuthFlowOutput, Coordinator>)createAuthCoordinator;
 
+@required
+- (id <Coordinator>)createSettingCoordinatorWith:(UINavigationController *)navigationController;
+- (id <Coordinator>)createSettingsCoordinator;
+
 @end

@@ -9,6 +9,7 @@
 #import "RouterImp.h"
 #import "AuthCoordinator.h"
 #import "AuthControllersFactory.h"
+#import "SettingsCoordinator.h"
 
 
 @implementation CoordinatorFactoryImp {
@@ -40,7 +41,33 @@
 }
 
 - (id <AuthFlowOutput, Coordinator>)createAuthCoordinator {
+
     return [self createAuthCoordinatorWith:nil];
 }
+
+- (id <Coordinator>)createSettingCoordinatorWith:(UINavigationController *)navigationController {
+
+    RouterImp *routerImp = [[RouterImp alloc] initWithNavigationController:[self navigationControllerFrom:navigationController]];
+    id <SettingsControllerFactory> factory = [[ControllerFactoryImp alloc] init];
+    SettingsCoordinator *settingsCoordinator = [[SettingsCoordinator alloc] initWithFactory:factory router:routerImp];
+    return settingsCoordinator;
+}
+
+- (id <Coordinator>)createSettingsCoordinator {
+
+    return [self createSettingCoordinatorWith:nil];
+}
+
+#pragma mark - Private
+
+- (UINavigationController *)navigationControllerFrom:(UINavigationController *)navigationController {
+
+    if (navigationController != nil) {
+        return navigationController;
+    } else {
+        return [UINavigationController controllerFromStoryboard:StoryboardEnumMain];
+    }
+}
+
 
 @end

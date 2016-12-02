@@ -24,6 +24,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>3927B01679D51CB939B803E9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SettingsDetailControllerOutput.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>3927B0501CC173A9E94574D4</key>
 		<dict>
 			<key>fileEncoding</key>
@@ -37,6 +50,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>3927B08EDAF818F621282E20</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SettingsDetailViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>3927B0C37A53AE28F58B60FC</key>
 		<dict>
 			<key>children</key>
@@ -44,6 +70,7 @@
 				<string>3927BA163855BBC337269049</string>
 				<string>3927B13157A342D19C7F318F</string>
 				<string>3927BD9E115E41F0810613F7</string>
+				<string>3927BE89E1E3565A22E1E2C7</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -98,6 +125,13 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>3927B11A5D5793B4EBBC2FE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3927B52253EA281C45ECC425</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>3927B13157A342D19C7F318F</key>
 		<dict>
 			<key>isa</key>
@@ -119,6 +153,19 @@
 			<string>sourcecode.c.h</string>
 			<key>path</key>
 			<string>CoordinatorFactory.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3927B164BCDF36A190C98969</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SettingsControllerOutput.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -218,6 +265,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>3927B2C01C5EEE2801CAC90F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SettingsItem.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>3927B2E0028DBE6D02FF647D</key>
 		<dict>
 			<key>fileEncoding</key>
@@ -290,6 +350,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>3927B33F6FE82C94C23140BC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3927B164BCDF36A190C98969</string>
+				<string>3927B01679D51CB939B803E9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Protocols</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>3927B33F9CD182E9803973C4</key>
 		<dict>
 			<key>fileEncoding</key>
@@ -313,6 +387,19 @@
 			<string>sourcecode.c.h</string>
 			<key>path</key>
 			<string>AuthCoordinator.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3927B45EE43F04D705C707A5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SettingsItem.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -342,12 +429,27 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>3927B52253EA281C45ECC425</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIViewController+Storyboard.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>3927B536F4E8AB077E94AE18</key>
 		<dict>
 			<key>children</key>
 			<array>
 				<string>3927B9314F736DBADF6FE62C</string>
 				<string>3927BED546FE585D6A91546B</string>
+				<string>3927B45EE43F04D705C707A5</string>
+				<string>3927B2C01C5EEE2801CAC90F</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -509,6 +611,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>3927B7BBFE33A04A4F1CD89B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIViewController+Storyboard.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>3927B810099BB7E3D657D1FF</key>
 		<dict>
 			<key>fileRef</key>
@@ -658,6 +773,13 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>3927BA97F2DB6ED95B6116E7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3927BD5CA9CEA6D2F49E45E3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>3927BAC725008B19F2FF7C8D</key>
 		<dict>
 			<key>fileEncoding</key>
@@ -711,6 +833,13 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>3927BBC144CC2C2D8903932C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3927B2C01C5EEE2801CAC90F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>3927BCA4ACC785C1A7136B12</key>
 		<dict>
 			<key>fileEncoding</key>
@@ -736,6 +865,13 @@
 			<string>AppDelegate.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3927BCB63E6CA987C7354210</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3927B08EDAF818F621282E20</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>3927BCFB3A50B86C66DB7875</key>
 		<dict>
@@ -784,6 +920,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>3927BD5CA9CEA6D2F49E45E3</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SettingsViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>3927BD67FE050B99682BA9E8</key>
 		<dict>
 			<key>fileRef</key>
@@ -812,6 +961,19 @@
 			<string>file.storyboard</string>
 			<key>path</key>
 			<string>Settings.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3927BDA88B10C3D3CC205B75</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SettingsDetailViewController.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -855,6 +1017,32 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>3927BE89E1E3565A22E1E2C7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>StoryboardsEnums.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3927BE97D2D485A76ECCD2F0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SettingsViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>3927BEA4B9C8D29CE8F150D6</key>
 		<dict>
 			<key>children</key>
@@ -869,6 +1057,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>3927BEAE4497E3FF4E46275E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3927B7BBFE33A04A4F1CD89B</string>
+				<string>3927B52253EA281C45ECC425</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Categories</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>3927BED546FE585D6A91546B</key>
 		<dict>
 			<key>fileEncoding</key>
@@ -879,6 +1081,22 @@
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
 			<string>ItemList.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3927BEDFD95F7B58D716B87E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3927BDA88B10C3D3CC205B75</string>
+				<string>3927B08EDAF818F621282E20</string>
+				<string>3927BE97D2D485A76ECCD2F0</string>
+				<string>3927BD5CA9CEA6D2F49E45E3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Controllers</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1002,6 +1220,10 @@
 				<string>3927B75B8221C05A555352A2</string>
 				<string>3927B1B65090815C02749DE5</string>
 				<string>3927B2676206AFD82175E23A</string>
+				<string>3927BA97F2DB6ED95B6116E7</string>
+				<string>3927BBC144CC2C2D8903932C</string>
+				<string>3927B11A5D5793B4EBBC2FE2</string>
+				<string>3927BCB63E6CA987C7354210</string>
 			</array>
 			<key>isa</key>
 			<string>PBXSourcesBuildPhase</string>
@@ -1434,6 +1656,7 @@
 			<key>children</key>
 			<array>
 				<string>3927BEA4B9C8D29CE8F150D6</string>
+				<string>3927BEAE4497E3FF4E46275E</string>
 				<string>3927B8C263891B4BC8C03BA1</string>
 				<string>3927BCFB3A50B86C66DB7875</string>
 			</array>
@@ -1477,6 +1700,8 @@
 		<dict>
 			<key>children</key>
 			<array>
+				<string>3927BEDFD95F7B58D716B87E</string>
+				<string>3927B33F6FE82C94C23140BC</string>
 				<string>3927BCA4ACC785C1A7136B12</string>
 				<string>3927BD5029988429004642F9</string>
 			</array>

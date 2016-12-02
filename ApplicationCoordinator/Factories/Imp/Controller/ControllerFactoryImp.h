@@ -5,9 +5,11 @@
 
 #import "ItemControllersFactory.h"
 #import "AuthControllersFactory.h"
+#import "SettingsControllerFactory.h"
 
 @interface ControllerFactoryImp : NSObject <
         ItemControllersFactory,
-        AuthControllersFactory>
+        AuthControllersFactory,
+        SettingsControllerFactory>
 
 @end

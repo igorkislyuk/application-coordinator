@@ -8,7 +8,7 @@
 #import "TabbarFlowOutput.h"
 #import "CoordinatorFactory.h"
 #import "ItemCoordinator.h"
-#import "TabbarViewController.h"
+#import "SettingsCoordinator.h"
 
 @interface ApplicationCoordinator ()
 
@@ -29,34 +29,33 @@
 }
 
 - (void)start {
-    
-    NavigationBlock settingsRun = ^(UINavigationController *navigationController) {
-        
-        
-    };
-    
+
     self.tabbar.onViewDidLoad = [self blockForRun];
     self.tabbar.itemFlowDidSelect = [self blockForRun];
-    self.tabbar.settingsFlowDidSelect = settingsRun;
+    self.tabbar.settingsFlowDidSelect = [self blockForSettings];
 }
 
 - (NavigationBlock)blockForRun {
+
     return ^(UINavigationController *navigationController) {
         if (navigationController.viewControllers.count == 0) {
             ItemCoordinator *itemCoordinator = (ItemCoordinator *) [self.coordinatorFactory createItemCoordinatorWith:navigationController];
             
             [itemCoordinator start];
-
             [self addDependency:itemCoordinator];
         }
     };
 }
 
 - (NavigationBlock)blockForSettings {
+
     return ^(UINavigationController *navigationController) {
         //means we run this block only once
         if (navigationController.viewControllers.count == 0) {
-            
+            SettingsCoordinator *settingsCoordinator = (SettingsCoordinator *)[self.coordinatorFactory createSettingCoordinatorWith:navigationController];
+
+            [settingsCoordinator start];
+            [self addDependency:settingsCoordinator];
         }
     };
 }
