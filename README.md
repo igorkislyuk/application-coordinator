@@ -19,7 +19,7 @@ storyboards -> set things up (router, protocols)
 
 2 ouputs - per controlers and per coordinator both in protocols
 
-
+remember about view controller id
 
 ## TLDR
 

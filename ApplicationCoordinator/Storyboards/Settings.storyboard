@@ -11,7 +11,7 @@
         <!--Settings View Controller-->
         <scene sceneID="9U0-fZ-7HJ">
             <objects>
-                <viewController id="PgF-Xz-4wM" customClass="SettingsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PgF-Xz-4wM" customClass="SettingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ver-wU-oL3"/>
                         <viewControllerLayoutGuide type="bottom" id="yWw-FW-kBY"/>
@@ -42,7 +42,7 @@
         <!--Settings Detail View Controller-->
         <scene sceneID="cR7-WB-OZ7">
             <objects>
-                <viewController id="0WA-FW-5r2" customClass="SettingsDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0WA-FW-5r2" customClass="SettingsDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ns7-rd-QXm"/>
                         <viewControllerLayoutGuide type="bottom" id="3pH-iF-jgO"/>
