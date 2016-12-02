@@ -12,10 +12,8 @@ https://github.com/AndreyPanov/ApplicationCoordinator
 1. Download current latest version from 'master' branch
 2. Learn the structure of sample project. Try to create something for you, using this simple algorithm
 
-##unreleased
-
+##CHECK THIS ONE
 storyboards -> set things up (router, protocols)
-
 
 2 ouputs - per controlers and per coordinator both in protocols
 
@@ -65,6 +63,7 @@ The one problem I faced it method call order. When we use pure xib-files, and cr
 - hide some logic from settings? coordinator
 - add some tables
 - remove passing nils
+- finish description
 
 ## Stack technologies
 
