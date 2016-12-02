@@ -6,7 +6,7 @@
 @protocol Router <NSObject>
 
 @required
-@property(nonatomic, weak, readonly) UINavigationController *navigationController;
+@property(nonatomic, weak, readonly) UINavigationController *rootViewController;
 
 @required
 - (void)present:(UIViewController *)viewController;

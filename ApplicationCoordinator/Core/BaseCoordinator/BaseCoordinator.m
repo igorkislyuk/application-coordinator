@@ -15,7 +15,7 @@
 @end
 
 @implementation BaseCoordinator {
-    NSMutableSet <BaseCoordinator *> *_childs;
+    NSMutableSet <id <Coordinator> > *_childs;
 }
 
 - (void)start {
@@ -24,7 +24,7 @@
 }
 
 //add only unique object
-- (void)addDependency:(BaseCoordinator *)coordinator {
+- (void)addDependency:(id <Coordinator>)coordinator {
 
     if (![_childs containsObject:coordinator]) {
         [_childs addObject:coordinator];
@@ -32,13 +32,13 @@
 
 }
 
-- (void)removeDependency:(BaseCoordinator *)coordinator {
+- (void)removeDependency:(id <Coordinator>)coordinator {
     if ([_childs containsObject:coordinator]) {
         [_childs removeObject:coordinator];
     }
 }
 
-- (NSSet <BaseCoordinator *> *)childCoordinators {
+- (NSSet <id <Coordinator> > *)childCoordinators {
     if (_childs == nil) {
         _childs = [[NSMutableSet alloc] init];
     }

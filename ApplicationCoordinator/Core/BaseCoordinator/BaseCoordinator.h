@@ -12,10 +12,10 @@
 
 @interface BaseCoordinator : NSObject <Coordinator>
 
-@property (nonatomic, strong, readonly) NSSet <BaseCoordinator *> *childCoordinators;
+@property (nonatomic, strong, readonly) NSSet <id <Coordinator> > *childCoordinators;
 
-- (void)addDependency:(BaseCoordinator *)coordinator;
+- (void)addDependency:(id <Coordinator>)coordinator;
 
-- (void)removeDependency:(BaseCoordinator *)coordinator;
+- (void)removeDependency:(id <Coordinator>)coordinator;
 
 @end

@@ -63,8 +63,12 @@
 
     RouterImp *routerImp = [[RouterImp alloc] initWithNavigationController:[self navigationControllerFrom:navigationController]];
 
-    id <Coordinator, ItemCreateCoordinatorOutput> coordinator = [[ItemCreateCoordinator alloc] ini]
+    id <ItemsControllersFactory> factory = [[ControllerFactoryImp alloc] init];
+    id <Coordinator, ItemCreateCoordinatorOutput> coordinator = [[ItemCreateCoordinator alloc] initWithRouter:routerImp
+                                                                                                      factory:factory];
 
+    coordinatorBox.coordinator = coordinator;
+    coordinatorBox.viewController = routerImp.rootViewController;
 
     return coordinatorBox;
 }

@@ -3,8 +3,10 @@
 // Copyright (c) 2016 Igor Kislyuk. All rights reserved.
 //
 
+@class Item;
+
 @protocol ItemCreateCoordinatorOutput <NSObject>
 
-@property(nonatomic, copy) EmptyBlock finishFlow;
+@property(nonatomic, copy) void(^onFinishFlow)(Item* item);
 
 @end

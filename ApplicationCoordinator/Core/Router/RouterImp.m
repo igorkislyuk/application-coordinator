@@ -21,7 +21,7 @@
 }
 
 
-- (UINavigationController *)navigationController {
+- (UINavigationController *)rootViewController {
     return _navigationController;
 }
 
@@ -30,8 +30,8 @@
 }
 
 - (void)present:(UIViewController *)viewController animated:(BOOL)animated {
-    if (self.navigationController) {
-        [self.navigationController presentViewController:viewController animated:animated completion:nil];
+    if (self.rootViewController) {
+        [self.rootViewController presentViewController:viewController animated:animated completion:nil];
     }
 }
 
@@ -40,8 +40,8 @@
 }
 
 - (void)push:(UIViewController *)viewController animated:(BOOL)animated {
-    if (self.navigationController) {
-        [self.navigationController pushViewController:viewController animated:YES];
+    if (self.rootViewController) {
+        [self.rootViewController pushViewController:viewController animated:YES];
     }
 }
 
@@ -50,20 +50,20 @@
 }
 
 - (void)popControllerAnimated:(BOOL)animated {
-    if (self.navigationController) {
-        [self.navigationController popViewControllerAnimated:animated];
+    if (self.rootViewController) {
+        [self.rootViewController popViewControllerAnimated:animated];
     }
 }
 
 - (void)dismissController {
-    if (self.navigationController) {
-        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    if (self.rootViewController) {
+        [self.rootViewController dismissViewControllerAnimated:YES completion:nil];
     }
 }
 
 - (void)dismissControllerAnimated:(BOOL)animated completion:(void (^)())handler {
-    if (self.navigationController) {
-        [self.navigationController dismissViewControllerAnimated:animated completion:handler];
+    if (self.rootViewController) {
+        [self.rootViewController dismissViewControllerAnimated:animated completion:handler];
     }
 }
 
@@ -73,8 +73,8 @@
 }
 
 - (void)popToRootAnimated:(BOOL)animated {
-    if (self.navigationController) {
-        [self.navigationController popToRootViewControllerAnimated:animated];
+    if (self.rootViewController) {
+        [self.rootViewController popToRootViewControllerAnimated:animated];
     }
 }
 

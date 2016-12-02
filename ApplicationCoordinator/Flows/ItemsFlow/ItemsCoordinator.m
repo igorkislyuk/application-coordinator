@@ -9,6 +9,8 @@
 #import "ItemsControllerOutput.h"
 #import "AuthFlowOutput.h"
 #import "ItemsControllersFactory.h"
+#import "CreateCoordinatorBox.h"
+#import "ItemCreateCoordinatorOutput.h"
 
 @interface ItemsCoordinator ()
 
@@ -57,7 +59,7 @@
         BlockStrongSelf strong = weakSelf;
         BlockCheckStrongSelf(strong);
 
-        [strong runCreateCoordinator];
+        [strong runItemCreateCoordinator];
 
     };
 
@@ -68,7 +70,7 @@
 
 - (void)runAuthCoordinator {
     
-    id <AuthFlowOutput, Coordinator> authCoord = [self.coordinatorFactory createAuthCoordinatorWith:self.router.navigationController];
+    id <AuthFlowOutput, Coordinator> authCoord = [self.coordinatorFactory createAuthCoordinatorWith:self.router.rootViewController];
     
     BlockWeakSelf weak = self;
     authCoord.finishFlow = ^{
@@ -85,11 +87,22 @@
 
 }
 
-- (void)runCreateCoordinator {
+- (void)runItemCreateCoordinator {
+    CreateCoordinatorBox *coordinatorBox = [self.coordinatorFactory createItemCreateCoordinatorBox];
 
+    id <Coordinator, ItemCreateCoordinatorOutput> coordinator = coordinatorBox.coordinator;
+
+    BlockWeakSelf weakSelf = self;
+    coordinator.onFinishFlow = ^(Item* item) {
+        BlockStrongSelf strong = weakSelf;
+        BlockCheckStrongSelf(strong);
+
+        [self.router dismissController];
+        [self removeDependency:coordinatorBox.coordinator];
+
+    };
 
 
 }
-
 
 @end

@@ -9,4 +9,7 @@
 
 @property(nonatomic, copy) EmptyBlock finishFlow;
 
+- (instancetype)initWithRouter:(id <Router>)router factory:(id <ItemsControllersFactory>)factory;
+
+
 @end
