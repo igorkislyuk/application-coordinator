@@ -7,22 +7,15 @@
 
 #import "ItemsViewController.h"
 
-@implementation RouterImp {
-    UINavigationController *_navigationController;
-}
+@implementation RouterImp
 
 - (instancetype)initWithNavigationController:(UINavigationController *)navigationController {
     self = [super init];
     if (self) {
-        _navigationController = navigationController;
+        _rootViewController = navigationController;
     }
 
     return self;
-}
-
-
-- (UINavigationController *)rootViewController {
-    return _navigationController;
 }
 
 - (void)present:(UIViewController *)viewController {
@@ -69,7 +62,7 @@
 
 - (void)setRootController:(UIViewController *)viewController {
     
-    [_navigationController setViewControllers:@[viewController] animated:NO];
+    [self.rootViewController setViewControllers:@[viewController] animated:NO];
 }
 
 - (void)popToRootAnimated:(BOOL)animated {

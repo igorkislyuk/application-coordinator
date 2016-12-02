@@ -9,6 +9,8 @@
 
 @interface RouterImp : NSObject <Router>
 
+@property(nonatomic, weak, readonly) UINavigationController *rootViewController;
+
 - (instancetype)initWithNavigationController:(UINavigationController *)navigationController;
 
 @end

@@ -355,7 +355,7 @@
 			path = Factories;
 			sourceTree = "<group>";
 		};
-		3927BFECD49B0D66D22D6A51 /* ItemCreate */ = {
+		3927BFECD49B0D66D22D6A51 /* ItemCreateFlow */ = {
 			isa = PBXGroup;
 			children = (
 				3927B777CEE3F1467CB59251 /* ItemCreateCoordinator.m */,
@@ -364,7 +364,7 @@
 				3927BFFF6316BDA48D06484F /* Controllers */,
 				3927B1933DF09F9CD02BA141 /* Protocols */,
 			);
-			path = ItemCreate;
+			path = ItemCreateFlow;
 			sourceTree = "<group>";
 		};
 		3927BFFF6316BDA48D06484F /* Controllers */ = {
@@ -455,7 +455,7 @@
 				3927B2568085B710ED7BBA4D /* AuthFlow */,
 				ED20E9FD1DE9DEF6004911B2 /* ItemsFlow */,
 				ED20E9FC1DE9DEEF004911B2 /* SettingsFlow */,
-				3927BFECD49B0D66D22D6A51 /* ItemCreate */,
+				3927BFECD49B0D66D22D6A51 /* ItemCreateFlow */,
 			);
 			path = Flows;
 			sourceTree = "<group>";

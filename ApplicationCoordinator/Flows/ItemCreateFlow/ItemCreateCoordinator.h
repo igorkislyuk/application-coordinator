@@ -5,9 +5,11 @@
 
 #import "ItemCreateCoordinatorOutput.h"
 
+@protocol ItemsControllersFactory;
+
 @interface ItemCreateCoordinator : BaseCoordinator <ItemCreateCoordinatorOutput>
 
-@property(nonatomic, copy) EmptyBlock finishFlow;
+@property(nonatomic, copy) EmptyBlock onFinishFlow;
 
 - (instancetype)initWithRouter:(id <Router>)router factory:(id <ItemsControllersFactory>)factory;
 

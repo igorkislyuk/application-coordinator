@@ -30,7 +30,7 @@
         <!--Items-->
         <scene sceneID="GJY-UK-WhY">
             <objects>
-                <viewController id="gyc-O5-d7c" customClass="UINavigationController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UINavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gyc-O5-d7c" customClass="UINavigationController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NQN-VN-8q5"/>
                         <viewControllerLayoutGuide type="bottom" id="zi2-uf-T3W"/>
@@ -49,7 +49,7 @@
         <!--Tabbar View Controller-->
         <scene sceneID="odo-1J-bOn">
             <objects>
-                <tabBarController id="prA-Fh-LE2" customClass="TabbarViewController" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabbarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="prA-Fh-LE2" customClass="TabbarViewController" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="GSr-zF-pWv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

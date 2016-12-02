@@ -42,30 +42,25 @@
 - (void)showList {
 
     id <ItemsControllerOutput> output = [self.factory createList];
-
-    BlockWeakSelf weakSelf = self;
 //    output.authNeeded = ^{
 //        BlockStrongSelf strongSelf = weakSelf;
 //        BlockCheckStrongSelf(strongSelf);
 //
 //        [strongSelf runAuthCoordinator];
 //    };
+//
+//    output.onSelection = ^(Item *itemList){
+//
+//    };
 
-    output.onSelection = ^(Item *itemList){
-
-    };
-
+    // TODO: - fix here what happens to weak ref. For fast setup, will use strong ref
     output.onCreate = ^{
-        BlockStrongSelf strong = weakSelf;
-        BlockCheckStrongSelf(strong);
-
-        [strong runItemCreateCoordinator];
-
+        
+        [self runItemCreateCoordinator];
     };
-
     
     [self.router setRootController:[output toPresent]];
-
+    
 }
 
 - (void)runAuthCoordinator {
@@ -73,12 +68,16 @@
     id <AuthFlowOutput, Coordinator> authCoord = [self.coordinatorFactory createAuthCoordinatorWith:self.router.rootViewController];
     
     BlockWeakSelf weak = self;
+    BlockWeakObject(authCoord) weakCoord = authCoord;
     authCoord.finishFlow = ^{
         BlockStrongSelf strong = weak;
         BlockCheckStrongSelf(strong);
         
+        BlockStrongObject(weakCoord) strongCoord = weakCoord;
+        BlockCheckStrongSelf(strongCoord);
+        
         [strong.router dismissControllerAnimated:YES completion:nil];
-        [strong removeDependency:authCoord];
+        [strong removeDependency:strongCoord];
         
     };
     
@@ -88,6 +87,7 @@
 }
 
 - (void)runItemCreateCoordinator {
+
     CreateCoordinatorBox *coordinatorBox = [self.coordinatorFactory createItemCreateCoordinatorBox];
 
     id <Coordinator, ItemCreateCoordinatorOutput> coordinator = coordinatorBox.coordinator;
@@ -97,11 +97,23 @@
         BlockStrongSelf strong = weakSelf;
         BlockCheckStrongSelf(strong);
 
-        [self.router dismissController];
-        [self removeDependency:coordinatorBox.coordinator];
+        [strong.router dismissController];
+        [strong removeDependency:coordinatorBox.coordinator];
+
+        if (item) {
+            [strong runShowItemDetails:item];
+        }
 
     };
 
+    [self addDependency:coordinator];
+    [self.router present:coordinatorBox.viewController];
+    [coordinator start];
+
+
+}
+
+- (void)runShowItemDetails:(Item *)item {
 
 }
 

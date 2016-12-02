@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Application Coordinator Test" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsp-vo-GnA">
-                                <rect key="frame" x="0.0" y="295.5" width="375" height="76.5"/>
+                                <rect key="frame" x="60" y="295.5" width="255" height="76.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -44,8 +44,8 @@
                             <constraint firstItem="tmp-FS-iTu" firstAttribute="centerX" secondItem="xsp-vo-GnA" secondAttribute="centerX" id="54o-gT-MJV"/>
                             <constraint firstItem="Ckh-HD-zSU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8MZ-h9-YRO"/>
                             <constraint firstItem="xsp-vo-GnA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="AHZ-bV-KYM"/>
-                            <constraint firstItem="xsp-vo-GnA" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Bnq-yq-8F9"/>
-                            <constraint firstAttribute="trailing" secondItem="xsp-vo-GnA" secondAttribute="trailing" id="MNI-0O-feI"/>
+                            <constraint firstItem="xsp-vo-GnA" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="60" id="Bnq-yq-8F9"/>
+                            <constraint firstAttribute="trailing" secondItem="xsp-vo-GnA" secondAttribute="trailing" constant="60" id="MNI-0O-feI"/>
                             <constraint firstItem="tmp-FS-iTu" firstAttribute="top" secondItem="xsp-vo-GnA" secondAttribute="bottom" constant="8" id="Ni6-Xz-nSW"/>
                             <constraint firstItem="xsp-vo-GnA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UcP-5d-vN6"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Ckh-HD-zSU" secondAttribute="bottom" constant="8" id="Yl0-wp-hBO"/>
