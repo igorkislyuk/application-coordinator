@@ -5,8 +5,10 @@
 
 #import "ApplicationCoordinator.h"
 
-#import "TabbarFlowOutput.h"
 #import "CoordinatorFactory.h"
+
+#import "TabbarFlowOutput.h"
+
 #import "ItemsCoordinator.h"
 #import "SettingsCoordinator.h"
 

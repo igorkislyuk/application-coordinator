@@ -6,7 +6,6 @@
 //  Copyright © 2016 Igor Kislyuk. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "TabbarFlowOutput.h"
 
 @interface TabbarViewController : UITabBarController <TabbarFlowOutput>

@@ -8,10 +8,10 @@
 
 #import "AppDelegate.h"
 
-
-#import "Coordinator.h"
 #import "ApplicationCoordinator.h"
+
 #import "CoordinatorFactoryImp.h"
+
 #import "TabbarViewController.h"
 
 @interface AppDelegate ()

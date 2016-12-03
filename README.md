@@ -44,11 +44,6 @@ This could be related to Lazy View loading from storyboards, instead of nib. If 
 
 - write it here, what needs to be done.
 
-- clear useless code
-- clear header files
-- hide some logic from settings? coordinator
-- add some tables
-
 ## Stack technologies
 
 - ObjC 

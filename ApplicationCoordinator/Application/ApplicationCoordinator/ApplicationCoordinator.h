@@ -3,11 +3,7 @@
 // Copyright (c) 2016 Igor Kislyuk. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "BaseCoordinator.h"
-
-@protocol CoordinatorFactory;
-@protocol TabbarFlowOutput;
+@protocol CoordinatorFactory, TabbarFlowOutput;
 
 @interface ApplicationCoordinator : BaseCoordinator
 

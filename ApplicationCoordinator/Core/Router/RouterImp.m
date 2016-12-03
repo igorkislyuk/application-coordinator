@@ -5,8 +5,6 @@
 
 #import "RouterImp.h"
 
-#import "ItemsViewController.h"
-
 @implementation RouterImp
 
 - (instancetype)initWithNavigationController:(UINavigationController *)navigationController {

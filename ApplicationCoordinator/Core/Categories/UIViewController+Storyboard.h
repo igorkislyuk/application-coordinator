@@ -3,8 +3,6 @@
 // Copyright (c) 2016 Igor Kislyuk. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 @interface UIViewController (Storyboard)
 
 + (__kindof UIViewController *)controllerFromStoryboard:(StoryboardEnum)storyboard;

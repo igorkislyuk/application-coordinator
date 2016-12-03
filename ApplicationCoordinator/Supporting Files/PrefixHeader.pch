@@ -20,6 +20,7 @@
 #import "FlowControllerOutput.h"
 #import "FlowControllerInput.h"
 
+#import "Coordinator.h"
 #import "BaseCoordinator.h"
 
 #import "StoryboardsEnums.h"
