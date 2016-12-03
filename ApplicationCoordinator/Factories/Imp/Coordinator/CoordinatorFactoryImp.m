@@ -66,7 +66,7 @@
 }
 
 - (AuthCoordinatorBox *)createAuthCoordinatorBoxWith:(UINavigationController *)navigationController {
-    AuthCoordinatorBox *box = nil;
+    AuthCoordinatorBox *box = [[AuthCoordinatorBox alloc] init];
 
     RouterImp *routerImp = [[RouterImp alloc] initWithNavigationController:[self navigationControllerFrom:navigationController]];
     id <AuthControllersFactory> factory = [[ControllerFactoryImp alloc] init];

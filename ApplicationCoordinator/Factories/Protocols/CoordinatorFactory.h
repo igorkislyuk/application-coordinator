@@ -27,6 +27,6 @@
 
 @required
 - (AuthCoordinatorBox *)createAuthCoordinatorBoxWith:(UINavigationController *)navigationController;
-- (AuthCoordinatorBox *)createAuthCoordinatorBox
+- (AuthCoordinatorBox *)createAuthCoordinatorBox;
 
 @end
