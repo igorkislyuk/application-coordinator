@@ -10,6 +10,8 @@
 
 @interface AuthViewController ()
 
+@property (nonatomic, weak) IBOutlet UILabel *authStatusLabel;
+
 @end
 
 @implementation AuthViewController
@@ -20,8 +22,22 @@
 }
 
 - (IBAction)actionAuth:(id)sender {
+
+    [self setAuthorized:YES];
+
     if (self.onAuthorization) {
         self.onAuthorization(YES);
+    }
+}
+
+- (void)setAuthorized:(BOOL)isAuth {
+
+    if (isAuth) {
+        self.authStatusLabel.text = @"You're authorized";
+        self.authStatusLabel.textColor = [UIColor greenColor];
+    } else {
+        self.authStatusLabel.text = @"You're not authorized";
+        self.authStatusLabel.textColor = [UIColor redColor];
     }
 }
 

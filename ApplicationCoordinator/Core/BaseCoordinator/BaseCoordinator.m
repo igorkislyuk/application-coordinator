@@ -9,6 +9,7 @@
 #import "BaseCoordinator.h"
 #import "ItemCreateCoordinatorOutput.h"
 #import "CreateCoordinatorBox.h"
+#import "AuthCoordinatorBox.h"
 
 @interface BaseCoordinator ()
 

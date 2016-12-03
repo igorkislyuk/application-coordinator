@@ -9,6 +9,7 @@
 @class BaseCoordinator;
 @protocol ItemCreateCoordinatorOutput;
 @class CreateCoordinatorBox;
+@class AuthCoordinatorBox;
 
 @protocol CoordinatorFactory <NSObject>
 
@@ -17,15 +18,15 @@
 - (id <Coordinator>)createItemCoordinator;
 
 @required
-- (id <AuthCoordinatorOutput, Coordinator>)createAuthCoordinatorWith:(UINavigationController *)navigationController;
-- (id <AuthCoordinatorOutput, Coordinator>)createAuthCoordinator;
-
-@required
 - (id <Coordinator>)createSettingCoordinatorWith:(UINavigationController *)navigationController;
 - (id <Coordinator>)createSettingsCoordinator;
 
 @required
 - (CreateCoordinatorBox *)createItemCreateCoordinatorBoxWith:(UINavigationController *)navigationController;
 - (CreateCoordinatorBox *)createItemCreateCoordinatorBox;
+
+@required
+- (AuthCoordinatorBox *)createAuthCoordinatorBoxWith:(UINavigationController *)navigationController;
+- (AuthCoordinatorBox *)createAuthCoordinatorBox
 
 @end

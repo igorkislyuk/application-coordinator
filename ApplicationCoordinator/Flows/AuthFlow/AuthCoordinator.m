@@ -33,7 +33,7 @@
 }
 
 - (void)runAuthController {
-    id <AuthControllerOutput> authController = [self.factory createAuthController];
+    id <AuthControllerOutput> authController = [self.factory createAuthOutput];
     
     BlockWeakSelf weak = self;
     authController.onAuthorization = ^(BOOL isAuth) {
@@ -44,8 +44,8 @@
             strong.finishFlow();
         }
     };
-    
-    [self.router present:[authController toPresent] animated:YES];
+
+    [self.router setRootController:[authController toPresent]];
 }
 
 

@@ -5,13 +5,13 @@
 
 #import "ItemsCoordinator.h"
 #import "CoordinatorFactory.h"
-#import "Router.h"
 #import "ItemsControllerOutput.h"
 #import "AuthCoordinatorOutput.h"
 #import "ItemsControllersFactory.h"
 #import "CreateCoordinatorBox.h"
 #import "ItemCreateCoordinatorOutput.h"
 #import "ItemDetailControllerOutput.h"
+#import "AuthCoordinatorBox.h"
 
 @interface ItemsCoordinator ()
 
@@ -66,24 +66,27 @@
 
 - (void)runAuthCoordinator {
     
-    id <AuthCoordinatorOutput, Coordinator> authCoord = [self.coordinatorFactory createAuthCoordinatorWith:self.router.rootViewController];
+    AuthCoordinatorBox *box = [self.coordinatorFactory createAuthCoordinatorBox];
     
+    id <Coordinator, AuthCoordinatorOutput> coordinator = box.coordinator;
+
     BlockWeakSelf weak = self;
-    BlockWeakObject(authCoord) weakCoord = authCoord;
-    authCoord.finishFlow = ^{
+    BlockWeakObject(coordinator) weakCoord = coordinator;
+    coordinator.finishFlow = ^{
         BlockStrongSelf strong = weak;
         BlockCheckStrongSelf(strong);
-        
+
         BlockStrongObject(weakCoord) strongCoord = weakCoord;
         BlockCheckStrongSelf(strongCoord);
-        
+
         [strong.router dismissControllerAnimated:YES completion:nil];
         [strong removeDependency:strongCoord];
-        
+
     };
-    
-    [self addDependency:authCoord];
-    [authCoord start];
+
+    [self addDependency:coordinator];
+    [self.router present:box.viewController];
+    [coordinator start];
 
 }
 

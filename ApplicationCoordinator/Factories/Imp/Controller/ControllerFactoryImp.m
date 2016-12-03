@@ -19,34 +19,34 @@
 
 - (id <ItemsControllerOutput>)createItemOutput {
 
-    id <ItemsControllerOutput> output = [ItemsViewController controllerFromStoryboard:StoryboardEnumItems];
-
-    return output;
+    return [ItemsViewController controllerFromStoryboard:StoryboardEnumItems];
 }
 
 - (id <ItemDetailControllerOutput>)createDetailOutput:(Item *)item {
+
     return [ItemDetailViewController controllerFromStoryboard:StoryboardEnumItems];
 }
 
 
-- (id <AuthControllerOutput>)createAuthController {
-    id <AuthControllerOutput> output = [[AuthViewController alloc] initWithNibName:NSStringFromClass([AuthViewController class]) bundle:nil];
-    return output;
+- (id <AuthControllerOutput>)createAuthOutput {
+
+    return [AuthViewController controllerFromStoryboard:StoryboardEnumAuthorization];
 }
 
 #pragma mark - Settings
 
 - (id <SettingsControllerOutput>)createSettingsOutput {
-    id <SettingsControllerOutput> output = [SettingsViewController controllerFromStoryboard:StoryboardEnumSettings];
-    return output;
+
+    return [SettingsViewController controllerFromStoryboard:StoryboardEnumSettings];
 }
 
 - (id <SettingsDetailControllerOutput>)createSettingsDetailOutput {
-    id <SettingsDetailControllerOutput> output = [SettingsDetailViewController controllerFromStoryboard:StoryboardEnumSettings];
-    return output;
+
+    return [SettingsDetailViewController controllerFromStoryboard:StoryboardEnumSettings];
 }
 
 - (id <ItemCreateControllerOutput>)createItemCreateOutput {
+
     return [ItemCreateViewController controllerFromStoryboard:StoryboardEnumItemCreate];
 }
 

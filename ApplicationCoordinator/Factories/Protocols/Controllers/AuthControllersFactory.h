@@ -9,6 +9,6 @@
 
 @protocol AuthControllersFactory <NSObject>
 
-- (id <AuthControllerOutput>)createAuthController;
+- (id <AuthControllerOutput>)createAuthOutput;
 
 @end

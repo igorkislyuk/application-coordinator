@@ -1,7 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Auth View Controller-->
+        <scene sceneID="wTt-sk-1DB">
+            <objects>
+                <viewController id="m6r-Ev-DMP" customClass="AuthViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vu8-uZ-yW4"/>
+                        <viewControllerLayoutGuide type="bottom" id="W0S-Mm-WS8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h9D-Kd-Gxd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fk-Dk-1V3">
+                                <rect key="frame" x="150" y="318" width="75" height="30"/>
+                                <state key="normal" title="Authorized"/>
+                                <connections>
+                                    <action selector="actionAuth:" destination="m6r-Ev-DMP" eventType="touchUpInside" id="YV0-n6-qmT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're not authorized" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ml-hD-ZAs">
+                                <rect key="frame" x="105.5" y="20" width="163.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6ml-hD-ZAs" firstAttribute="top" secondItem="Vu8-uZ-yW4" secondAttribute="bottom" id="cho-7y-ykG"/>
+                            <constraint firstItem="1fk-Dk-1V3" firstAttribute="centerY" secondItem="h9D-Kd-Gxd" secondAttribute="centerY" id="dzZ-Ap-EsX"/>
+                            <constraint firstItem="6ml-hD-ZAs" firstAttribute="centerX" secondItem="h9D-Kd-Gxd" secondAttribute="centerX" id="kCN-fW-WMT"/>
+                            <constraint firstItem="1fk-Dk-1V3" firstAttribute="centerX" secondItem="h9D-Kd-Gxd" secondAttribute="centerX" id="q7C-TI-H8e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="authStatusLabel" destination="6ml-hD-ZAs" id="rhZ-Ht-A2f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a7r-CX-p6n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-206" y="263"/>
+        </scene>
+    </scenes>
 </document>

@@ -18,6 +18,7 @@
 @implementation ItemCreateCoordinator
 
 - (instancetype)initWithRouter:(id <Router>)router factory:(id <ItemCreateControllersFactory>)factory {
+    
     self = [super init];
     if (self) {
         _router = router;

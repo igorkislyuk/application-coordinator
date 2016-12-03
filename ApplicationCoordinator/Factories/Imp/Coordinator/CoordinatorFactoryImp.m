@@ -12,6 +12,7 @@
 #import "SettingsCoordinator.h"
 #import "CreateCoordinatorBox.h"
 #import "ItemCreateCoordinator.h"
+#import "AuthCoordinatorBox.h"
 
 
 @implementation CoordinatorFactoryImp
@@ -30,19 +31,6 @@
 
 - (id <Coordinator>)createItemCoordinator {
     return [self createItemCoordinatorWith:nil];
-}
-
-- (id <AuthCoordinatorOutput, Coordinator>)createAuthCoordinatorWith:(UINavigationController *)navigationController {
-    
-    RouterImp *router = [[RouterImp alloc] initWithNavigationController:navigationController];
-    ControllerFactoryImp *controllerFactoryImp = [[ControllerFactoryImp alloc] init];
-    id <AuthCoordinatorOutput, Coordinator> coordinator = [[AuthCoordinator alloc] initWithRouter:router factory:controllerFactoryImp];
-    return coordinator;
-}
-
-- (id <AuthCoordinatorOutput, Coordinator>)createAuthCoordinator {
-
-    return [self createAuthCoordinatorWith:nil];
 }
 
 - (id <Coordinator>)createSettingCoordinatorWith:(UINavigationController *)navigationController {
@@ -75,6 +63,24 @@
 
 - (CreateCoordinatorBox *)createItemCreateCoordinatorBox {
     return [self createItemCreateCoordinatorBoxWith:nil];
+}
+
+- (AuthCoordinatorBox *)createAuthCoordinatorBoxWith:(UINavigationController *)navigationController {
+    AuthCoordinatorBox *box = nil;
+
+    RouterImp *routerImp = [[RouterImp alloc] initWithNavigationController:[self navigationControllerFrom:navigationController]];
+    id <AuthControllersFactory> factory = [[ControllerFactoryImp alloc] init];
+    id <Coordinator, AuthCoordinatorOutput> coordinator = [[AuthCoordinator alloc] initWithRouter:routerImp
+                                                                                          factory:factory];
+
+    box.viewController = routerImp.rootViewController;
+    box.coordinator = coordinator;
+
+    return box;
+}
+
+- (AuthCoordinatorBox *)createAuthCoordinatorBox {
+    return [self createAuthCoordinatorBoxWith:nil];
 }
 
 
