@@ -11,16 +11,23 @@
 #import "SettingsViewController.h"
 #import "SettingsDetailViewController.h"
 #import "ItemCreateViewController.h"
+#import "ItemDetailViewController.h"
+#import "ItemDetailControllerOutput.h"
 
 
 @implementation ControllerFactoryImp
 
-- (id <ItemsControllerOutput>)createList {
+- (id <ItemsControllerOutput>)createItemOutput {
 
     id <ItemsControllerOutput> output = [ItemsViewController controllerFromStoryboard:StoryboardEnumItems];
 
     return output;
 }
+
+- (id <ItemDetailControllerOutput>)createDetailOutput:(Item *)item {
+    return [ItemDetailViewController controllerFromStoryboard:StoryboardEnumItems];
+}
+
 
 - (id <AuthControllerOutput>)createAuthController {
     id <AuthControllerOutput> output = [[AuthViewController alloc] initWithNibName:NSStringFromClass([AuthViewController class]) bundle:nil];

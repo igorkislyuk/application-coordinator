@@ -11,6 +11,7 @@
 #import "ItemsControllersFactory.h"
 #import "CreateCoordinatorBox.h"
 #import "ItemCreateCoordinatorOutput.h"
+#import "ItemDetailControllerOutput.h"
 
 @interface ItemsCoordinator ()
 
@@ -41,7 +42,7 @@
 
 - (void)showList {
 
-    id <ItemsControllerOutput> output = [self.factory createList];
+    id <ItemsControllerOutput> output = [self.factory createItemOutput];
 //    output.authNeeded = ^{
 //        BlockStrongSelf strongSelf = weakSelf;
 //        BlockCheckStrongSelf(strongSelf);
@@ -49,9 +50,9 @@
 //        [strongSelf runAuthCoordinator];
 //    };
 //
-//    output.onSelection = ^(Item *itemList){
-//
-//    };
+    output.onSelection = ^(Item *item){
+        [self runShowItemDetails:item];
+    };
 
     // TODO: - fix here what happens to weak ref. For fast setup, will use strong ref
     output.onCreate = ^{
@@ -114,6 +115,10 @@
 }
 
 - (void)runShowItemDetails:(Item *)item {
+
+    id <ItemDetailControllerOutput> output = [self.factory createDetailOutput:item];
+
+    [self.router push:[output toPresent]];
 
 }
 

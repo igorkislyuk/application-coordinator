@@ -6,7 +6,10 @@
 //  Copyright (c) 2016 Igor Kislyuk. All rights reserved.
 //
 
+@class Item;
 
 @interface ItemDetailViewController : UIViewController
+
+@property (nonatomic, strong) Item* item;
 
 @end
