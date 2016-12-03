@@ -7,7 +7,7 @@
 #import "CoordinatorFactory.h"
 #import "Router.h"
 #import "ItemsControllerOutput.h"
-#import "AuthFlowOutput.h"
+#import "AuthCoordinatorOutput.h"
 #import "ItemsControllersFactory.h"
 #import "CreateCoordinatorBox.h"
 #import "ItemCreateCoordinatorOutput.h"
@@ -43,18 +43,18 @@
 - (void)showList {
 
     id <ItemsControllerOutput> output = [self.factory createItemOutput];
-//    output.authNeeded = ^{
-//        BlockStrongSelf strongSelf = weakSelf;
-//        BlockCheckStrongSelf(strongSelf);
-//
-//        [strongSelf runAuthCoordinator];
-//    };
-//
+    // TODO: - fix here what happens to weak ref. For fast setup, will use strong ref
+
+    output.authNeeded = ^{
+
+        [self runAuthCoordinator];
+    };
+
     output.onSelection = ^(Item *item){
+
         [self runShowItemDetails:item];
     };
 
-    // TODO: - fix here what happens to weak ref. For fast setup, will use strong ref
     output.onCreate = ^{
         
         [self runItemCreateCoordinator];
@@ -66,7 +66,7 @@
 
 - (void)runAuthCoordinator {
     
-    id <AuthFlowOutput, Coordinator> authCoord = [self.coordinatorFactory createAuthCoordinatorWith:self.router.rootViewController];
+    id <AuthCoordinatorOutput, Coordinator> authCoord = [self.coordinatorFactory createAuthCoordinatorWith:self.router.rootViewController];
     
     BlockWeakSelf weak = self;
     BlockWeakObject(authCoord) weakCoord = authCoord;

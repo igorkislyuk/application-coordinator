@@ -10,6 +10,6 @@
 
 @interface AuthViewController : UIViewController <AuthControllerOutput>
 
-@property(nonatomic, copy) EmptyBlock authFinished;
+@property(nonatomic, copy) void(^onAuthorization)(BOOL isAuth);
 
 @end

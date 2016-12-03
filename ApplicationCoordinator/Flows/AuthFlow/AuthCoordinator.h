@@ -5,10 +5,10 @@
 
 #import <Foundation/Foundation.h>
 #import "BaseCoordinator.h"
-#import "AuthFlowOutput.h"
+#import "AuthCoordinatorOutput.h"
 #import "AuthControllersFactory.h"
 
-@interface AuthCoordinator : BaseCoordinator <AuthFlowOutput>
+@interface AuthCoordinator : BaseCoordinator <AuthCoordinatorOutput>
 
 - (instancetype)initWithRouter:(id <Router>)router factory:(id <AuthControllersFactory>)factory;
 

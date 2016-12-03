@@ -20,8 +20,8 @@
 }
 
 - (IBAction)actionAuth:(id)sender {
-    if (self.authFinished) {
-        self.authFinished();
+    if (self.onAuthorization) {
+        self.onAuthorization(YES);
     }
 }
 

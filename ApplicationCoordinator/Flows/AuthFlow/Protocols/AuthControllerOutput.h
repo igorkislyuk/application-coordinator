@@ -6,9 +6,10 @@
 #import <Foundation/Foundation.h>
 #import "FlowControllerOutput.h"
 
+
 @protocol AuthControllerOutput <FlowControllerOutput>
 
 @required
-@property(nonatomic, copy) EmptyBlock authFinished;
+@property(nonatomic, copy) void(^onAuthorization)(BOOL isAuth);
 
 @end

@@ -32,15 +32,15 @@
     return [self createItemCoordinatorWith:nil];
 }
 
-- (id <AuthFlowOutput, Coordinator>)createAuthCoordinatorWith:(UINavigationController *)navigationController {
+- (id <AuthCoordinatorOutput, Coordinator>)createAuthCoordinatorWith:(UINavigationController *)navigationController {
     
     RouterImp *router = [[RouterImp alloc] initWithNavigationController:navigationController];
     ControllerFactoryImp *controllerFactoryImp = [[ControllerFactoryImp alloc] init];
-    id <AuthFlowOutput, Coordinator> coordinator = [[AuthCoordinator alloc] initWithRouter:router factory:controllerFactoryImp];
+    id <AuthCoordinatorOutput, Coordinator> coordinator = [[AuthCoordinator alloc] initWithRouter:router factory:controllerFactoryImp];
     return coordinator;
 }
 
-- (id <AuthFlowOutput, Coordinator>)createAuthCoordinator {
+- (id <AuthCoordinatorOutput, Coordinator>)createAuthCoordinator {
 
     return [self createAuthCoordinatorWith:nil];
 }

@@ -5,7 +5,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol AuthFlowOutput <NSObject>
+@protocol AuthCoordinatorOutput <NSObject>
 
 @required
 @property(nonatomic, copy) EmptyBlock finishFlow;

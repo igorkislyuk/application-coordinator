@@ -5,7 +5,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol Coordinator, AuthFlowOutput;
+@protocol Coordinator, AuthCoordinatorOutput;
 @class BaseCoordinator;
 @protocol ItemCreateCoordinatorOutput;
 @class CreateCoordinatorBox;
@@ -17,8 +17,8 @@
 - (id <Coordinator>)createItemCoordinator;
 
 @required
-- (id <AuthFlowOutput, Coordinator>)createAuthCoordinatorWith:(UINavigationController *)navigationController;
-- (id <AuthFlowOutput, Coordinator>)createAuthCoordinator;
+- (id <AuthCoordinatorOutput, Coordinator>)createAuthCoordinatorWith:(UINavigationController *)navigationController;
+- (id <AuthCoordinatorOutput, Coordinator>)createAuthCoordinator;
 
 @required
 - (id <Coordinator>)createSettingCoordinatorWith:(UINavigationController *)navigationController;

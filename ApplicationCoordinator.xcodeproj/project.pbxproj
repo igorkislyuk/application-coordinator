@@ -13,6 +13,7 @@
 		3927B11A5D5793B4EBBC2FE2 /* UIViewController+Storyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B52253EA281C45ECC425 /* UIViewController+Storyboard.m */; };
 		3927B16C337A46C7388AD268 /* ItemCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B904A5FE142186D0B3DB /* ItemCreateViewController.m */; };
 		3927B1B65090815C02749DE5 /* RouterImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BB4491CB0BE07F804E43 /* RouterImp.m */; };
+		3927B227DE161FDB2F20B757 /* AuthCoordinatorBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B733C4F075BEAAC8E961 /* AuthCoordinatorBox.m */; };
 		3927B2676206AFD82175E23A /* SettingsCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927BD5029988429004642F9 /* SettingsCoordinator.m */; };
 		3927B2E98010CAF74A083D42 /* CoordinatorFactoryImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B311E4A1DC7C7A9C8B64 /* CoordinatorFactoryImp.m */; };
 		3927B423A91E1105C5E4B506 /* ItemCreateCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3927B777CEE3F1467CB59251 /* ItemCreateCoordinator.m */; };
@@ -63,6 +64,7 @@
 		3927B33F9CD182E9803973C4 /* AuthCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthCoordinator.m; sourceTree = "<group>"; };
 		3927B34AD6748DB96C143F82 /* AuthCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthCoordinator.h; sourceTree = "<group>"; };
 		3927B39656CCCE01A150F3F9 /* ItemCreateControllersFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCreateControllersFactory.h; sourceTree = "<group>"; };
+		3927B463911694B38F6DF9BE /* AuthCoordinatorBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthCoordinatorBox.h; sourceTree = "<group>"; };
 		3927B4752DE14805032BE1EF /* ItemCreateControllerOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCreateControllerOutput.h; sourceTree = "<group>"; };
 		3927B4DA62939636BF3E42BD /* ItemsCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsCoordinator.m; sourceTree = "<group>"; };
 		3927B505D5BBAF3F261C06DB /* ItemDetailControllerOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetailControllerOutput.h; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		3927B659A954CA89F6806C29 /* BaseCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCoordinator.m; sourceTree = "<group>"; };
 		3927B66F5E639774325A3320 /* ItemCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCreateViewController.h; sourceTree = "<group>"; };
 		3927B6FB4BCBB4801906ADA2 /* ApplicationCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationCoordinator.m; sourceTree = "<group>"; };
+		3927B733C4F075BEAAC8E961 /* AuthCoordinatorBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthCoordinatorBox.m; sourceTree = "<group>"; };
 		3927B777CEE3F1467CB59251 /* ItemCreateCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCreateCoordinator.m; sourceTree = "<group>"; };
 		3927B797128CB5507B29B9BE /* Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
 		3927B7BBFE33A04A4F1CD89B /* UIViewController+Storyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Storyboard.h"; sourceTree = "<group>"; };
@@ -92,7 +95,7 @@
 		3927BB57AB8F1FA90898087C /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		3927BCA4ACC785C1A7136B12 /* SettingsCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsCoordinator.h; sourceTree = "<group>"; };
 		3927BCA773FEEBD9C06E3A6E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		3927BD3FCCBB93A5CC84133A /* AuthFlowOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthFlowOutput.h; sourceTree = "<group>"; };
+		3927BD3FCCBB93A5CC84133A /* AuthCoordinatorOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthCoordinatorOutput.h; sourceTree = "<group>"; };
 		3927BD5029988429004642F9 /* SettingsCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsCoordinator.m; sourceTree = "<group>"; };
 		3927BD5CA9CEA6D2F49E45E3 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		3927BD88BBCEE4EA74D094E9 /* BaseCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCoordinator.h; sourceTree = "<group>"; };
@@ -164,7 +167,7 @@
 				3927BE12265D31667689CF14 /* Protocols */,
 				3927B34AD6748DB96C143F82 /* AuthCoordinator.h */,
 				3927B33F9CD182E9803973C4 /* AuthCoordinator.m */,
-				3927BD3FCCBB93A5CC84133A /* AuthFlowOutput.h */,
+				3927BD3FCCBB93A5CC84133A /* AuthCoordinatorOutput.h */,
 			);
 			path = AuthFlow;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				3927B4E5466F32F9E3224554 /* CreateCoordinatorBox */,
 				3927B8087F6094686E3DFBEB /* ItemList */,
 				3927B609B19C82E0BD6510D4 /* SettingsItem */,
+				3927BAED1B3B9785081D33ED /* AuthCoordinatorBox */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -282,6 +286,15 @@
 				3927B39656CCCE01A150F3F9 /* ItemCreateControllersFactory.h */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3927BAED1B3B9785081D33ED /* AuthCoordinatorBox */ = {
+			isa = PBXGroup;
+			children = (
+				3927B733C4F075BEAAC8E961 /* AuthCoordinatorBox.m */,
+				3927B463911694B38F6DF9BE /* AuthCoordinatorBox.h */,
+			);
+			path = AuthCoordinatorBox;
 			sourceTree = "<group>";
 		};
 		3927BB7EAE78E335B8AF6659 /* Imp */ = {
@@ -601,6 +614,7 @@
 				3927B7AF612090CE1277D720 /* Item.m in Sources */,
 				3927B0334845C88600AEBDC1 /* SettingsItem.m in Sources */,
 				3927B16C337A46C7388AD268 /* ItemCreateViewController.m in Sources */,
+				3927B227DE161FDB2F20B757 /* AuthCoordinatorBox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,19 +29,19 @@
 }
 
 - (void)start {
-    [self showAuthController];
+    [self runAuthController];
 }
 
-- (void)showAuthController {
+- (void)runAuthController {
     id <AuthControllerOutput> authController = [self.factory createAuthController];
     
     BlockWeakSelf weak = self;
-    authController.authFinished = ^() {
+    authController.onAuthorization = ^(BOOL isAuth) {
         BlockStrongSelf strong = weak;
         BlockCheckStrongSelf(strong);
         
-        if ([strong finishFlow]) {
-            [strong finishFlow];
+        if (strong.finishFlow) {
+            strong.finishFlow();
         }
     };
     
