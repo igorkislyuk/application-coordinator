@@ -8,10 +8,15 @@
 #import "Protocols/SettingsControllerOutput.h"
 #import "SettingsDetailControllerOutput.h"
 
+@interface SettingsCoordinator ()
+@property (nonatomic, strong) id <Router> router;
+@property (nonatomic, strong) id <SettingsControllerFactory> factory;
+@end
 
 @implementation SettingsCoordinator
 
 - (instancetype)initWithFactory:(id <SettingsControllerFactory>)factory router:(id <Router>)router {
+
     self = [super init];
     if (self) {
         _factory = factory;
