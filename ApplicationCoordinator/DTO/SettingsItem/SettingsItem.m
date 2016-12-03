@@ -5,7 +5,6 @@
 
 #import "SettingsItem.h"
 
-
 @implementation SettingsItem {
 
 }

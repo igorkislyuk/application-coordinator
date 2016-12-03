@@ -4,8 +4,6 @@
 //
 
 #import "CreateCoordinatorBox.h"
-#import "ItemCreateCoordinatorOutput.h"
-
 
 @implementation CreateCoordinatorBox {
 

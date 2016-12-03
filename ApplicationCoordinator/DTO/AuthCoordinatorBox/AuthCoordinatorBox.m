@@ -4,8 +4,6 @@
 //
 
 #import "AuthCoordinatorBox.h"
-#import "AuthCoordinatorOutput.h"
-
 
 @implementation AuthCoordinatorBox
 @end

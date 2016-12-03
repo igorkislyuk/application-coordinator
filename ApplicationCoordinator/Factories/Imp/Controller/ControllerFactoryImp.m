@@ -4,15 +4,18 @@
 //
 
 #import "ControllerFactoryImp.h"
+
 #import "ItemsViewController.h"
+#import "ItemDetailControllerOutput.h"
+#import "ItemDetailViewController.h"
+
+#import "ItemCreateViewController.h"
+
 #import "AuthViewController.h"
-#import "ItemsControllerOutput.h"
+
 #import "SettingsControllerOutput.h"
 #import "SettingsViewController.h"
 #import "SettingsDetailViewController.h"
-#import "ItemCreateViewController.h"
-#import "ItemDetailViewController.h"
-#import "ItemDetailControllerOutput.h"
 
 
 @implementation ControllerFactoryImp

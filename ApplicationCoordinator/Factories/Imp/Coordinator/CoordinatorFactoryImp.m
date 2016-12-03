@@ -4,16 +4,17 @@
 //
 
 #import "CoordinatorFactoryImp.h"
-#import "ItemsCoordinator.h"
+
 #import "ControllerFactoryImp.h"
 #import "RouterImp.h"
-#import "AuthCoordinator.h"
-#import "AuthControllersFactory.h"
-#import "SettingsCoordinator.h"
+
 #import "CreateCoordinatorBox.h"
-#import "ItemCreateCoordinator.h"
 #import "AuthCoordinatorBox.h"
 
+#import "ItemsCoordinator.h"
+#import "AuthCoordinator.h"
+#import "SettingsCoordinator.h"
+#import "ItemCreateCoordinator.h"
 
 @implementation CoordinatorFactoryImp
 
