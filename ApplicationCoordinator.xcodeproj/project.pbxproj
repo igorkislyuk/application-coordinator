@@ -194,7 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				3927B4E5466F32F9E3224554 /* CreateCoordinatorBox */,
-				3927B8087F6094686E3DFBEB /* ItemList */,
+				3927B8087F6094686E3DFBEB /* Item */,
 				3927B609B19C82E0BD6510D4 /* SettingsItem */,
 				3927BAED1B3B9785081D33ED /* AuthCoordinatorBox */,
 			);
@@ -237,13 +237,13 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		3927B8087F6094686E3DFBEB /* ItemList */ = {
+		3927B8087F6094686E3DFBEB /* Item */ = {
 			isa = PBXGroup;
 			children = (
 				3927BDE68BC43C0FA6F5472F /* Item.h */,
 				3927BB57AB8F1FA90898087C /* Item.m */,
 			);
-			path = ItemList;
+			path = Item;
 			sourceTree = "<group>";
 		};
 		3927B8C263891B4BC8C03BA1 /* Protocols */ = {

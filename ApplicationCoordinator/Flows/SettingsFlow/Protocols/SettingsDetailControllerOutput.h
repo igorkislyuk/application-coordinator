@@ -6,4 +6,6 @@
 #import <Foundation/Foundation.h>
 
 @protocol SettingsDetailControllerOutput <FlowControllerOutput>
+
+
 @end

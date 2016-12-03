@@ -25,9 +25,12 @@
 
     [self setAuthorized:YES];
 
-    if (self.onAuthorization) {
-        self.onAuthorization(YES);
-    }
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        if (self.onAuthorization) {
+            self.onAuthorization(YES);
+        }
+    });
+   
 }
 
 - (void)setAuthorized:(BOOL)isAuth {

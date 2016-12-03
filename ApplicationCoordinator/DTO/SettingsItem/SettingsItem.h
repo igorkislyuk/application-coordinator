@@ -7,4 +7,7 @@
 
 
 @interface SettingsItem : NSObject
+
+@property (nonatomic, strong) NSNumber *number;
+
 @end

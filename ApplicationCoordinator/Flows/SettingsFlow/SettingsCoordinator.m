@@ -37,7 +37,7 @@
         BlockCheckStrongSelf(strong);
 
         //show detailed
-        id <SettingsDetailControllerOutput> detail = [self.factory createSettingsDetailOutput];
+        id <SettingsDetailControllerOutput> detail = [self.factory createSettingsDetailOutputWith:item];
         [strong.router push:[detail toPresent]];
     };
 

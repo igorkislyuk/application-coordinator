@@ -40,9 +40,11 @@
     return [SettingsViewController controllerFromStoryboard:StoryboardEnumSettings];
 }
 
-- (id <SettingsDetailControllerOutput>)createSettingsDetailOutput {
+- (id <SettingsDetailControllerOutput>)createSettingsDetailOutputWith:(SettingsItem *)settingsItem {
 
-    return [SettingsDetailViewController controllerFromStoryboard:StoryboardEnumSettings];
+    SettingsDetailViewController *controller = [SettingsDetailViewController controllerFromStoryboard:StoryboardEnumSettings];
+    controller.item = settingsItem;
+    return controller;
 }
 
 - (id <ItemCreateControllerOutput>)createItemCreateOutput {

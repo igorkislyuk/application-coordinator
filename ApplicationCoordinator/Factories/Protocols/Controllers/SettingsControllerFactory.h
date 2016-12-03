@@ -7,11 +7,12 @@
 
 @protocol SettingsControllerOutput;
 @protocol SettingsDetailControllerOutput;
+@class SettingsItem;
 
 @protocol SettingsControllerFactory <NSObject>
 
 - (id <SettingsControllerOutput>)createSettingsOutput;
 
-- (id <SettingsDetailControllerOutput>)createSettingsDetailOutput;
+- (id <SettingsDetailControllerOutput>)createSettingsDetailOutputWith:(SettingsItem *)settingsItem;
 
 @end

@@ -7,7 +7,10 @@
 //
 
 #import "SettingsDetailControllerOutput.h"
+#import "SettingsItem.h"
 
 @interface SettingsDetailViewController : UIViewController <SettingsDetailControllerOutput>
+
+@property (nonatomic, strong) SettingsItem *item;
 
 @end
