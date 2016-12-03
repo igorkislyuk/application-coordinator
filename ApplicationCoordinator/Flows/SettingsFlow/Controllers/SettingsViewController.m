@@ -6,7 +6,7 @@
 //  Copyright (c) 2016 Igor Kislyuk. All rights reserved.
 //
 
-const NSString *reuseIdentifier = @"SettingsCell";
+const NSString *SettingsReuseIdentifier = @"SettingsCell";
 
 #import "SettingsViewController.h"
 #import "SettingsItem.h"
@@ -60,7 +60,7 @@ const NSString *reuseIdentifier = @"SettingsCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SettingsReuseIdentifier forIndexPath:indexPath];
 
     SettingsItem *item = [self itemWithIndexPath:indexPath];
 

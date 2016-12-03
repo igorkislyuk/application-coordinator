@@ -21,8 +21,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flc-c9-HPZ">
-                                <rect key="frame" x="139.5" y="318" width="95" height="30"/>
-                                <state key="normal" title="Create button"/>
+                                <rect key="frame" x="147" y="318" width="80" height="30"/>
+                                <state key="normal" title="Create item"/>
                                 <connections>
                                     <action selector="actionCreate:" destination="X4O-6x-0vL" eventType="touchUpInside" id="BjQ-va-Zyt"/>
                                 </connections>
