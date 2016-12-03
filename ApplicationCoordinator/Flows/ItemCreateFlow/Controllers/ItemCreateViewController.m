@@ -8,6 +8,8 @@
 
 #import "ItemCreateViewController.h"
 
+#import "Item.h"
+
 @interface ItemCreateViewController ()
 
 @end
@@ -25,7 +27,7 @@
 - (IBAction)actionCreate:(id)sender {
 
     if (self.onItemCreate) {
-        self.onItemCreate(nil);
+        self.onItemCreate([[Item alloc] init]);
     }
 
 }
@@ -34,10 +36,6 @@
     if (self.onHide) {
         self.onHide();
     }
-}
-
-- (UIViewController *)toPresent {
-    return self;
 }
 
 

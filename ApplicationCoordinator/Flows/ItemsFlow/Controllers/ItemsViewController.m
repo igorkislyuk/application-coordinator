@@ -29,10 +29,6 @@
     }
 }
 
-- (UIViewController *)toPresent {
-    return self;
-}
-
 - (IBAction)actionSelect:(id)sender {
     if (self.onSelection) {
         self.onSelection(nil);

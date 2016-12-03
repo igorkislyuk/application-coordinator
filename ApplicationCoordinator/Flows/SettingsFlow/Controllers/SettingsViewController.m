@@ -24,10 +24,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (UIViewController *)toPresent {
-    return self;
-}
-
 - (IBAction)actionShowDetailed {
     
     if (self.showDetailedSettings) {

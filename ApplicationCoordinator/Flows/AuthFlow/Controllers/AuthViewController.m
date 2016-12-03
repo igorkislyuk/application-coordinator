@@ -25,8 +25,4 @@
     }
 }
 
-- (UIViewController *)toPresent {
-    return self;
-}
-
 @end
