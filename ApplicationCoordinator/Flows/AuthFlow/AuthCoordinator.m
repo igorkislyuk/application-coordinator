@@ -4,8 +4,7 @@
 //
 
 #import "AuthCoordinator.h"
-#import "AuthControllersFactory.h"
-#import "Router.h"
+
 #import "AuthControllerOutput.h"
 
 @interface AuthCoordinator ()

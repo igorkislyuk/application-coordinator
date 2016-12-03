@@ -4,8 +4,10 @@
 //
 
 #import "SettingsCoordinator.h"
+
 #import "SettingsControllerFactory.h"
-#import "Protocols/SettingsControllerOutput.h"
+
+#import "SettingsControllerOutput.h"
 #import "SettingsDetailControllerOutput.h"
 
 @interface SettingsCoordinator ()

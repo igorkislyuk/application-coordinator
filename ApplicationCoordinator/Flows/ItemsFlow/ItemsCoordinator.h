@@ -3,8 +3,6 @@
 // Copyright (c) 2016 Igor Kislyuk. All rights reserved.
 //
 
-#import "BaseCoordinator.h"
-
 @protocol CoordinatorFactory, Router, ItemsControllersFactory;
 
 @interface ItemsCoordinator : BaseCoordinator

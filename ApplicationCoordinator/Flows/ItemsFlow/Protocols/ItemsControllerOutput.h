@@ -3,9 +3,6 @@
 // Copyright (c) 2016 Igor Kislyuk. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "FlowControllerOutput.h"
-
 @class Item;
 typedef void(^ListSelection)(Item *itemList);
 

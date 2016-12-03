@@ -4,9 +4,11 @@
 //
 
 #import "ItemCreateCoordinator.h"
+
 #import "ItemsControllersFactory.h"
-#import "ItemCreateControllerOutput.h"
 #import "ItemCreateControllersFactory.h"
+
+#import "ItemCreateControllerOutput.h"
 
 @interface ItemCreateCoordinator ()
 

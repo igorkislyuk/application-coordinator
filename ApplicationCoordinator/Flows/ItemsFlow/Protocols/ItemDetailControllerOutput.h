@@ -3,6 +3,6 @@
 // Copyright (c) 2016 Igor Kislyuk. All rights reserved.
 //
 
-
 @protocol ItemDetailControllerOutput <FlowControllerOutput>
+
 @end

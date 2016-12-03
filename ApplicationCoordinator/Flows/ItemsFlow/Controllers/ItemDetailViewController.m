@@ -7,7 +7,6 @@
 //
 
 #import "ItemDetailViewController.h"
-#import "Item.h"
 
 @implementation ItemDetailViewController
 

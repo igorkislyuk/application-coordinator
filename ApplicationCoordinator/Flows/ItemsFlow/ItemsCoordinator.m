@@ -4,14 +4,17 @@
 //
 
 #import "ItemsCoordinator.h"
+
 #import "CoordinatorFactory.h"
+#import "ItemsControllersFactory.h"
+
+#import "CreateCoordinatorBox.h"
+#import "AuthCoordinatorBox.h"
+
 #import "ItemsControllerOutput.h"
 #import "AuthCoordinatorOutput.h"
-#import "ItemsControllersFactory.h"
-#import "CreateCoordinatorBox.h"
 #import "ItemCreateCoordinatorOutput.h"
 #import "ItemDetailControllerOutput.h"
-#import "AuthCoordinatorBox.h"
 
 @interface ItemsCoordinator ()
 

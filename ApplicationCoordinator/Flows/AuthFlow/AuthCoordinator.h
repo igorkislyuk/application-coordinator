@@ -3,8 +3,6 @@
 // Copyright (c) 2016 Igor Kislyuk. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "BaseCoordinator.h"
 #import "AuthCoordinatorOutput.h"
 #import "AuthControllersFactory.h"
 

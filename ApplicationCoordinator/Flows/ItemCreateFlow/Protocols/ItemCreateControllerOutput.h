@@ -3,7 +3,6 @@
 // Copyright (c) 2016 Igor Kislyuk. All rights reserved.
 //
 
-
 @class Item;
 
 @protocol ItemCreateControllerOutput <FlowControllerOutput>
